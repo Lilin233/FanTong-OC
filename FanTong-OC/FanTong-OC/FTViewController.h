@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class FTViewModel;
 @interface FTViewController : UIViewController
 
+@property (nonatomic, strong)FTViewModel *viewModel;
+
+- (instancetype)initWithViewModel:(FTViewModel *)viewModel;
+
+- (void)bindViewModel;
 @end

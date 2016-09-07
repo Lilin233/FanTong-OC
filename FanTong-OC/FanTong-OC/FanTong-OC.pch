@@ -1,0 +1,14 @@
+//
+//  FanTong-OC.pch
+//  FanTong-OC
+//
+//  Created by Kai Liu on 16/9/7.
+//  Copyright © 2016年 Kai. All rights reserved.
+//
+
+#ifndef FanTong_OC_pch
+#define FanTong_OC_pch
+    #import "UIViewExt.h"
+    #import <ReactiveCocoa/ReactiveCocoa.h>
+    #import "Constant.h"
+#endif /* FanTong_OC_pch */

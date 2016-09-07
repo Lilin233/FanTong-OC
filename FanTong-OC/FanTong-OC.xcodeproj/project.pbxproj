@@ -14,12 +14,16 @@
 		2A91A9841D40F0410050E423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A91A9821D40F0410050E423 /* LaunchScreen.storyboard */; };
 		2A91A98F1D40F0410050E423 /* FanTong_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91A98E1D40F0410050E423 /* FanTong_OCTests.m */; };
 		2A91A99A1D40F0410050E423 /* FanTong_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91A9991D40F0410050E423 /* FanTong_OCUITests.m */; };
+		2AA5E7491D7FB19700099E02 /* FTViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5E7481D7FB19700099E02 /* FTViewModel.m */; };
+		2AA5E74C1D7FB1AD00099E02 /* FTLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5E74B1D7FB1AD00099E02 /* FTLoginViewModel.m */; };
+		2AA5E7571D7FB44400099E02 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5E7561D7FB44400099E02 /* UIViewExt.m */; };
 		2AC265ED1D5CA7A500763253 /* FTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265EC1D5CA7A500763253 /* FTViewController.m */; };
 		2AC265F01D5CA7FA00763253 /* FTHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265EF1D5CA7FA00763253 /* FTHomePageViewController.m */; };
 		2AC265F31D5CA81600763253 /* FTMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265F21D5CA81600763253 /* FTMessageViewController.m */; };
 		2AC265F61D5CA82F00763253 /* FTSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265F51D5CA82F00763253 /* FTSearchViewController.m */; };
 		2AC265F91D5CA84000763253 /* FTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265F81D5CA84000763253 /* FTProfileViewController.m */; };
 		2AEE69321D5DEBF000933620 /* FTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE69311D5DEBF000933620 /* FTLoginViewController.m */; };
+		2AEF16E01D8017CD0062047B /* FTRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF16DF1D8017CD0062047B /* FTRouter.m */; };
 		72F931C1308827197B3BF4A0 /* libPods-FanTong-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 999E85A35E533C1DC0700BDA /* libPods-FanTong-OC.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,14 @@
 		2A91A9951D40F0410050E423 /* FanTong-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FanTong-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A91A9991D40F0410050E423 /* FanTong_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanTong_OCUITests.m; sourceTree = "<group>"; };
 		2A91A99B1D40F0410050E423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA5E7471D7FB19700099E02 /* FTViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTViewModel.h; sourceTree = "<group>"; };
+		2AA5E7481D7FB19700099E02 /* FTViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTViewModel.m; sourceTree = "<group>"; };
+		2AA5E74A1D7FB1AD00099E02 /* FTLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTLoginViewModel.h; sourceTree = "<group>"; };
+		2AA5E74B1D7FB1AD00099E02 /* FTLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTLoginViewModel.m; sourceTree = "<group>"; };
+		2AA5E7541D7FB2BD00099E02 /* FanTong-OC.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FanTong-OC.pch"; sourceTree = "<group>"; };
+		2AA5E7551D7FB44400099E02 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		2AA5E7561D7FB44400099E02 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		2AA5E75A1D7FED9300099E02 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		2AC265EB1D5CA7A500763253 /* FTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTViewController.h; sourceTree = "<group>"; };
 		2AC265EC1D5CA7A500763253 /* FTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTViewController.m; sourceTree = "<group>"; };
 		2AC265EE1D5CA7FA00763253 /* FTHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHomePageViewController.h; sourceTree = "<group>"; };
@@ -68,6 +80,8 @@
 		2AC265F81D5CA84000763253 /* FTProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTProfileViewController.m; sourceTree = "<group>"; };
 		2AEE69301D5DEBF000933620 /* FTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTLoginViewController.h; sourceTree = "<group>"; };
 		2AEE69311D5DEBF000933620 /* FTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTLoginViewController.m; sourceTree = "<group>"; };
+		2AEF16DE1D8017CD0062047B /* FTRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTRouter.h; sourceTree = "<group>"; };
+		2AEF16DF1D8017CD0062047B /* FTRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTRouter.m; sourceTree = "<group>"; };
 		999E85A35E533C1DC0700BDA /* libPods-FanTong-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FanTong-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95D69FE3FA2968CDD985B77 /* Pods-FanTong-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FanTong-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-FanTong-OC/Pods-FanTong-OC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,12 +142,7 @@
 				2AC265E71D5CA62D00763253 /* Model */,
 				2AC265E81D5CA63400763253 /* View */,
 				2AC265E91D5CA63B00763253 /* ViewModel */,
-				2A91A9771D40F0410050E423 /* AppDelegate.h */,
-				2A91A9781D40F0410050E423 /* AppDelegate.m */,
-				2A91A97D1D40F0410050E423 /* Main.storyboard */,
-				2A91A9801D40F0410050E423 /* Assets.xcassets */,
-				2A91A9821D40F0410050E423 /* LaunchScreen.storyboard */,
-				2A91A9851D40F0410050E423 /* Info.plist */,
+				2AA5E7521D7FB21700099E02 /* Supporting Files */,
 				2A91A9741D40F0410050E423 /* Supporting Files */,
 			);
 			path = "FanTong-OC";
@@ -165,6 +174,29 @@
 			path = "FanTong-OCUITests";
 			sourceTree = "<group>";
 		};
+		2AA5E7461D7FB15500099E02 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				2AA5E7471D7FB19700099E02 /* FTViewModel.h */,
+				2AA5E7481D7FB19700099E02 /* FTViewModel.m */,
+			);
+			name = BaseClass;
+			sourceTree = "<group>";
+		};
+		2AA5E7521D7FB21700099E02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A91A9771D40F0410050E423 /* AppDelegate.h */,
+				2A91A9781D40F0410050E423 /* AppDelegate.m */,
+				2A91A97D1D40F0410050E423 /* Main.storyboard */,
+				2A91A9801D40F0410050E423 /* Assets.xcassets */,
+				2A91A9821D40F0410050E423 /* LaunchScreen.storyboard */,
+				2A91A9851D40F0410050E423 /* Info.plist */,
+				2AA5E7541D7FB2BD00099E02 /* FanTong-OC.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2AC265E51D5CA61900763253 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +207,11 @@
 		2AC265E61D5CA62500763253 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2AA5E7551D7FB44400099E02 /* UIViewExt.h */,
+				2AA5E7561D7FB44400099E02 /* UIViewExt.m */,
+				2AA5E75A1D7FED9300099E02 /* Constant.h */,
+				2AEF16DE1D8017CD0062047B /* FTRouter.h */,
+				2AEF16DF1D8017CD0062047B /* FTRouter.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -207,6 +244,9 @@
 		2AC265E91D5CA63B00763253 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2AA5E7461D7FB15500099E02 /* BaseClass */,
+				2AA5E74A1D7FB1AD00099E02 /* FTLoginViewModel.h */,
+				2AA5E74B1D7FB1AD00099E02 /* FTLoginViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -308,7 +348,7 @@
 				TargetAttributes = {
 					2A91A9701D40F0410050E423 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = FK374K382T;
+						DevelopmentTeam = T33D97QCKP;
 					};
 					2A91A9891D40F0410050E423 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -422,9 +462,13 @@
 			files = (
 				2AC265F61D5CA82F00763253 /* FTSearchViewController.m in Sources */,
 				2A91A9791D40F0410050E423 /* AppDelegate.m in Sources */,
+				2AA5E7571D7FB44400099E02 /* UIViewExt.m in Sources */,
 				2AC265F31D5CA81600763253 /* FTMessageViewController.m in Sources */,
+				2AA5E7491D7FB19700099E02 /* FTViewModel.m in Sources */,
 				2AC265F01D5CA7FA00763253 /* FTHomePageViewController.m in Sources */,
 				2AEE69321D5DEBF000933620 /* FTLoginViewController.m in Sources */,
+				2AA5E74C1D7FB1AD00099E02 /* FTLoginViewModel.m in Sources */,
+				2AEF16E01D8017CD0062047B /* FTRouter.m in Sources */,
 				2AC265ED1D5CA7A500763253 /* FTViewController.m in Sources */,
 				2AC265F91D5CA84000763253 /* FTProfileViewController.m in Sources */,
 				2A91A9761D40F0410050E423 /* main.m in Sources */,
@@ -572,10 +616,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FanTong-OC/FanTong-OC.pch";
 				INFOPLIST_FILE = "FanTong-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CoCoThinking.FanTong-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -589,10 +635,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FanTong-OC/FanTong-OC.pch";
 				INFOPLIST_FILE = "FanTong-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CoCoThinking.FanTong-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
