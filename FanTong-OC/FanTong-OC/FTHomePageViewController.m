@@ -19,11 +19,14 @@
     self.navigationController.navigationBar.topItem.title = @"首页";
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap)];
     [self.view addGestureRecognizer:tap];
+    
+    
 }
 - (void)tap{
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     FTLoginViewController *loginVC = [storyBoard instantiateViewControllerWithIdentifier:@"LoginViewController"];
-    [self.navigationController pushViewController:loginVC animated:YES];
+//    [self.navigationController pushViewController:loginVC animated:YES];
+    [self presentViewController:loginVC animated:NO completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

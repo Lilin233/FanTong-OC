@@ -13,14 +13,14 @@
 +(instancetype)allocWithZone:(struct _NSZone *)zone{
     FTViewModel *viewModel = [super allocWithZone:zone];
     @weakify(viewModel)
-    [[viewModel rac_signalForSelector:@selector(initWithService)]
+    [[viewModel rac_signalForSelector:@selector(initWithParams:)]
         subscribeNext:^(id x) {
            @strongify(viewModel)
             [viewModel initialize];
         }];
     return viewModel;
 }
-- (instancetype)initWithService{
+- (instancetype)initWithParams:(NSDictionary *)params{
     self = [super init];
     if (self) {
         

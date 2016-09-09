@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong)RACSubject *willDisappearSignal;
 
-- (instancetype)initWithService;
+- (instancetype)initWithParams:(NSDictionary *)params;
+
 - (void)initialize;
 @end
