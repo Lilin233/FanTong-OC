@@ -12,4 +12,5 @@
     #import <ReactiveCocoa/ReactiveCocoa.h>
     #import "Constant.h"
     #import "HYBNetworking/HYBNetworking.h"
+    #import <TDOAuth/TDOAuth.h>
 #endif /* FanTong_OC_pch */

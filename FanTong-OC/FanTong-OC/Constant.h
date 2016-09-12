@@ -45,7 +45,7 @@
 ///
 /// 饭否URL
 ///
-#define FANFOU_HOST @"api.fanfou.com"
+#define FANFOU_HOST @"fanfou.com"
 
 //OAUTH
 #define FANFOU_REQUEST_TOKEN_URL @"http://fanfou.com/oauth/request_token"

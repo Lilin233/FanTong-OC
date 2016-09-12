@@ -105,6 +105,7 @@
     [[self.loginButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self)
         [self.viewModel.loginCommand execute:nil];
+        [self.viewModel loginFanfou];
     }];
 }
 
