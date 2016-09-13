@@ -20,7 +20,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FanTong-OC/FTLoginViewModel.m"
-            timestampString = "495374044.281375"
+            timestampString = "495421655.609734"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-loginFanfou"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FanTong-OC/FTLoginViewModel.m"
+            timestampString = "495421752.776393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
