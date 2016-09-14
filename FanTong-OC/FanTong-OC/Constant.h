@@ -34,7 +34,14 @@
 ///------
 #define UIColorFromRGB(rgbValue)    [UIColor colorWithRed : ((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green : ((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue : ((float)(rgbValue & 0xFF)) / 255.0 alpha : 1.0]
 
-
+///-----------
+/// SSKeychain
+///-----------
+#define FT_RAW_LOGIN @"RawLogin"
+#define FT_PASSWORD  @"PASSWORD"
+#define FT_SERVICE_NAME @"com.CocoaThinking.FanTong-OC"
+#define FT_ACCESS_TOKEN @"AccessToken"
+#define FT_SECRET @"Secret"
 ///
 /// 饭否oauth
 ///

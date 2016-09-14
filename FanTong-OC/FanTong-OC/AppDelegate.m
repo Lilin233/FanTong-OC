@@ -16,8 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    [self configureRootViewController];
     [self configureAppearance];
+    [self configureNetworking];
     return YES;
 }
 
@@ -45,8 +46,28 @@
 
 
 #pragma mark Configure
+- (void)configureRootViewController{
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIViewController *rootNaviVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"rootNavicationController"];
+    UIViewController *loginVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+
+    if ([SSKeychain rawLogin].length > 0) {
+        self.window.rootViewController = rootNaviVC;
+    }else{
+        self.window.rootViewController = loginVC;
+
+    }
+    
+}
 - (void)configureAppearance{
     [UINavigationBar appearance].barTintColor = [UIColor greenColor];
+
+}
+- (void)configureNetworking{
+//    [HYBNetworking cacheGetRequest:YES shoulCachePost:YES];
 
 }
 @end

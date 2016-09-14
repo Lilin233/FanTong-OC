@@ -24,6 +24,5 @@
 /// The command of the login button
 @property (nonatomic, strong)RACCommand *loginCommand;
 
-- (void)loginFanfou;
 
 @end

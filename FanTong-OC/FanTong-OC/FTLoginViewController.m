@@ -76,6 +76,11 @@
     self.passwordTextField.attributedPlaceholder = [[NSAttributedString alloc]initWithString:@"密码" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     self.usernameTextField.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.3];
     self.passwordTextField.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.3];
+    
+    if ([SSKeychain rawLogin].length > 0) {
+        self.usernameTextField.text = [SSKeychain rawLogin];
+        self.passwordTextField.text = [SSKeychain password];
+    }
 }
 
 #pragma mark Bind ViewModel
@@ -91,9 +96,9 @@
     }] subscribeNext:^(NSNumber *executing) {
         @strongify(self)
         if (executing.boolValue) {
-            [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES].labelText = @"Logging in...";
+            [MBProgressHUD showHUDAddedTo:self.view animated:YES].labelText = @"Logging in...";
         }else{
-            [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
         }
     }];
     
@@ -105,7 +110,6 @@
     [[self.loginButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self)
         [self.viewModel.loginCommand execute:nil];
-        [self.viewModel loginFanfou];
     }];
 }
 

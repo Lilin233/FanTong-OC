@@ -13,4 +13,7 @@
     #import "Constant.h"
     #import "HYBNetworking/HYBNetworking.h"
     #import <TDOAuth/TDOAuth.h>
+    #import <AFNetworking/AFNetworking.h>
+    #import <SSKeychain/SSKeychain.h>
+#import "SSKeychain+FTUtil.h"
 #endif /* FanTong_OC_pch */
