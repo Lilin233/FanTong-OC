@@ -27,25 +27,9 @@
     
     RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         @strongify(self)
-        NSMutableURLRequest *URLRequest = [[TDOAuth URLRequestForPath:@"/oauth/access_token" GETParameters:@{@"x_auth_username": self.username, @"x_auth_password": self.password,  @"x_auth_mode": @"client_auth"} host:FANFOU_HOST consumerKey:OAUTH_CONSUMER_KEY consumerSecret:OAUTH_CONSUMER_SECRET accessToken:nil tokenSecret:nil] mutableCopy];
+        NSMutableURLRequest *URLRequest = [[TDOAuth URLRequestForPath:FANFOU_ACCESS_TOKEN_URL GETParameters:@{@"x_auth_username": self.username, @"x_auth_password": self.password,  @"x_auth_mode": @"client_auth"} host:FANFOU_HOST consumerKey:FANFOU_OAUTH_CONSUMER_KEY consumerSecret:FANFOU_OAUTH_CONSUMER_SECRET accessToken:nil tokenSecret:nil] mutableCopy];
         
-        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-        configuration.timeoutIntervalForRequest = 20;
-        configuration.timeoutIntervalForResource = 20;
-        
-        AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:configuration];
-        manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/x-www-form-urlencoded",
-                                                                                  @"application/json",
-                                                                                  @"text/html",
-                                                                                  @"text/json",
-                                                                                  @"text/plain",
-                                                                                  @"text/javascript",
-                                                                                  @"text/xml",
-                                                                                  @"image/*"]];
-        
-        manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-        
-        [[manager dataTaskWithRequest:URLRequest completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        NSURLSessionTask *task = [FTNetWorking requestRemoteDataWithRequest:URLRequest returnJSON:NO complete:^(id responseObject, NSError *error) {
             NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
             if (!error && ![responseString containsString:@"<error>"]) {
                 
@@ -55,7 +39,6 @@
                 NSRange tokenRange = NSMakeRange(startRange.location + startRange.length, endRange.location - startRange.location - startRange.length);
                 NSString *token = [responseString substringWithRange:tokenRange];
                 NSString *secret = [responseString substringFromIndex:endRange.location + endRange.length];
-                NSLog(@"%@ %@", token, secret);
                 
                 [SSKeychain setRawLogin:self.username];
                 [SSKeychain setPassword:self.password];
@@ -80,13 +63,13 @@
                     NSLog(@"网络故障了");
                 }
                 [subscriber sendError:error];
-
+                
             }
-            
-        }] resume];
-        
+
+        }];
+                
         return [RACDisposable disposableWithBlock:^{
-            
+            [task cancel];
         }];
     }];
 

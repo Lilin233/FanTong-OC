@@ -51,13 +51,45 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FanTong-OC/FTLoginViewModel.m"
-            timestampString = "495532886.504321"
+            filePath = "Pods/TDOAuth/TDOAuth.m"
+            timestampString = "495959986.249615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-loginFanfouSignal"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
+            landmarkName = "+URLRequestForPath:parameters:host:consumerKey:consumerSecret:accessToken:tokenSecret:scheme:requestMethod:dataEncoding:headerValues:signatureMethod:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FanTong-OC/CBStoreHouseRefreshControl.m"
+            timestampString = "496043914.794779"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "-scrollViewDidScroll"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FanTong-OC/CBStoreHouseRefreshControl.m"
+            timestampString = "496043939.724124"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "-scrollViewDidEndDragging"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

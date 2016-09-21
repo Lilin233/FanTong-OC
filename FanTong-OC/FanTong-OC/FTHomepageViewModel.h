@@ -8,6 +8,6 @@
 
 #import "FTViewModel.h"
 
-@interface FTHomepageViewModel : FTViewModel
+@interface FTHomepageViewModel : FTTableViewModel
 
 @end

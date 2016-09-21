@@ -63,11 +63,10 @@
     
 }
 - (void)configureAppearance{
-    [UINavigationBar appearance].barTintColor = [UIColor greenColor];
+    [UINavigationBar appearance].barTintColor = [UIColor whiteColor];
 
 }
 - (void)configureNetworking{
-//    [HYBNetworking cacheGetRequest:YES shoulCachePost:YES];
 
 }
 @end

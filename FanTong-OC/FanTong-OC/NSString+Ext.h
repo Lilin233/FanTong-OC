@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Ext)
+- (NSAttributedString *)formatterHTMLAttributeString;
 
 @end

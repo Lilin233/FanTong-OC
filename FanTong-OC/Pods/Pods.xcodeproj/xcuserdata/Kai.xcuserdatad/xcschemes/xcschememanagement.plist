@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DTCoreText.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DTFoundation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DZNEmptyDataSet.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -137,7 +147,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1582067925FE5A38EE86EB75B0D183BB</key>
+		<key>1950562BD3EB23B0ACF74A6AA9CD6A3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,12 +157,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>28E96696997719355EDF1418A1BA2640</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54D5716994BCD8C820B735B971C61D83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5AB85AA4347A8A6B177ED5571A60EB32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6610362E50A6DE8BACCA1F2885CD9157</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>67F9DE304CED51B938BA7783AA64AB09</key>
+		<key>71CB03742EBAFB403836D42EECCEC522</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -162,12 +187,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7FFC48F9474BBFD95B055ADFD3B39186</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>91B6383B908B28C3611FB220A86E4159</key>
+		<key>89CA1C59D3E9A96F584801321777EF56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -177,7 +197,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9987A7ADF1CE780FF724512C189C4C24</key>
+		<key>9E5F0F13BFE7EA4F5DE5529A600CAE17</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -197,27 +217,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B1027AACB6B0EC3E265CC4B4987F62B0</key>
+		<key>AB00D8C1CD2C195C0DA1E71F6147B266</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BBC41C8DB8E6ACBC413E1CC1CDADC491</key>
+		<key>ABDC4C20E8B241E7CBABC21B9B7DD8CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BE0BFBBF49479E0F9D12F9C6ECA7D85E</key>
+		<key>BA295A9D8CB3AC09E1A0D2AB46BFD226</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C131BAB74FB0B6AD7AA16675FC6F9864</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C3CB285A9F00888EEB7A19EEECD12CCC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C62A457CD7664CE8779D98759FEC9B98</key>
 		<dict>
 			<key>primary</key>
 			<true/>

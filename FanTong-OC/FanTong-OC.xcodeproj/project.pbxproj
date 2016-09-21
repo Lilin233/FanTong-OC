@@ -10,6 +10,15 @@
 		2A5EBBCD1D8943F500EC80D2 /* SSKeychain+FTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBCC1D8943F500EC80D2 /* SSKeychain+FTUtil.m */; };
 		2A5EBBD01D894E6E00EC80D2 /* FTHomepageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBCF1D894E6E00EC80D2 /* FTHomepageViewModel.m */; };
 		2A5EBBD61D894F5500EC80D2 /* FTModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBD51D894F5500EC80D2 /* FTModels.m */; };
+		2A5EBBDA1D8E37A700EC80D2 /* FTTimelineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBD91D8E37A700EC80D2 /* FTTimelineTableViewCell.m */; };
+		2A5EBBE31D8E3B4000EC80D2 /* FTStatusToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBE21D8E3B4000EC80D2 /* FTStatusToolBar.m */; };
+		2A5EBBE61D8E86D000EC80D2 /* FTTimelineCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBE51D8E86D000EC80D2 /* FTTimelineCellViewModel.m */; };
+		2A5EBBE91D8E8A1C00EC80D2 /* FTTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBE81D8E8A1C00EC80D2 /* FTTableViewModel.m */; };
+		2A5EBBF61D8F8F5700EC80D2 /* FTNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBF51D8F8F5700EC80D2 /* FTNetWorking.m */; };
+		2A5EBBF81D90D2C000EC80D2 /* storehouse.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A5EBBF71D90D2C000EC80D2 /* storehouse.plist */; };
+		2A5EBBFE1D90DE6100EC80D2 /* BarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBFB1D90DE6100EC80D2 /* BarItem.m */; };
+		2A5EBBFF1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBFD1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m */; };
+		2A5EBC021D92254900EC80D2 /* NSAttributedString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBC011D92254900EC80D2 /* NSAttributedString+Ext.m */; };
 		2A7378D11D8164CC00C604F3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7378D01D8164CC00C604F3 /* NSData+Base64.m */; };
 		2A7378DB1D81671A00C604F3 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7378D81D81671A00C604F3 /* base64.m */; };
 		2A7378DC1D81671A00C604F3 /* HmacSha1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7378DA1D81671A00C604F3 /* HmacSha1.m */; };
@@ -60,6 +69,23 @@
 		2A5EBBCF1D894E6E00EC80D2 /* FTHomepageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHomepageViewModel.m; sourceTree = "<group>"; };
 		2A5EBBD41D894F5500EC80D2 /* FTModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTModels.h; sourceTree = "<group>"; };
 		2A5EBBD51D894F5500EC80D2 /* FTModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTModels.m; sourceTree = "<group>"; };
+		2A5EBBD81D8E37A700EC80D2 /* FTTimelineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTimelineTableViewCell.h; sourceTree = "<group>"; };
+		2A5EBBD91D8E37A700EC80D2 /* FTTimelineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTimelineTableViewCell.m; sourceTree = "<group>"; };
+		2A5EBBE11D8E3B4000EC80D2 /* FTStatusToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTStatusToolBar.h; sourceTree = "<group>"; };
+		2A5EBBE21D8E3B4000EC80D2 /* FTStatusToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTStatusToolBar.m; sourceTree = "<group>"; };
+		2A5EBBE41D8E86D000EC80D2 /* FTTimelineCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTimelineCellViewModel.h; sourceTree = "<group>"; };
+		2A5EBBE51D8E86D000EC80D2 /* FTTimelineCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTimelineCellViewModel.m; sourceTree = "<group>"; };
+		2A5EBBE71D8E8A1C00EC80D2 /* FTTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTableViewModel.h; sourceTree = "<group>"; };
+		2A5EBBE81D8E8A1C00EC80D2 /* FTTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTableViewModel.m; sourceTree = "<group>"; };
+		2A5EBBF41D8F8F5700EC80D2 /* FTNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNetWorking.h; sourceTree = "<group>"; };
+		2A5EBBF51D8F8F5700EC80D2 /* FTNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNetWorking.m; sourceTree = "<group>"; };
+		2A5EBBF71D90D2C000EC80D2 /* storehouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = storehouse.plist; sourceTree = "<group>"; };
+		2A5EBBFA1D90DE6100EC80D2 /* BarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarItem.h; sourceTree = "<group>"; };
+		2A5EBBFB1D90DE6100EC80D2 /* BarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarItem.m; sourceTree = "<group>"; };
+		2A5EBBFC1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBStoreHouseRefreshControl.h; sourceTree = "<group>"; };
+		2A5EBBFD1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBStoreHouseRefreshControl.m; sourceTree = "<group>"; };
+		2A5EBC001D92254900EC80D2 /* NSAttributedString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Ext.h"; sourceTree = "<group>"; };
+		2A5EBC011D92254900EC80D2 /* NSAttributedString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Ext.m"; sourceTree = "<group>"; };
 		2A7378CF1D8164CC00C604F3 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		2A7378D01D8164CC00C604F3 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		2A7378D71D81671A00C604F3 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
@@ -135,9 +161,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A5EBBD71D8E376D00EC80D2 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2A5EBBD81D8E37A700EC80D2 /* FTTimelineTableViewCell.h */,
+				2A5EBBD91D8E37A700EC80D2 /* FTTimelineTableViewCell.m */,
+				2A5EBBE11D8E3B4000EC80D2 /* FTStatusToolBar.h */,
+				2A5EBBE21D8E3B4000EC80D2 /* FTStatusToolBar.m */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		2A5EBBF91D90DE5100EC80D2 /* CBStoreHouseRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				2A5EBBFA1D90DE6100EC80D2 /* BarItem.h */,
+				2A5EBBFB1D90DE6100EC80D2 /* BarItem.m */,
+				2A5EBBFC1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.h */,
+				2A5EBBFD1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m */,
+			);
+			name = CBStoreHouseRefreshControl;
+			sourceTree = "<group>";
+		};
 		2A7378DD1D82B1F700C604F3 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				2A5EBBF91D90DE5100EC80D2 /* CBStoreHouseRefreshControl */,
 				2A7379411D82BE1C00C604F3 /* HYBNetworking */,
 			);
 			name = Vendor;
@@ -150,6 +199,8 @@
 				2A7379451D86AC6E00C604F3 /* NSString+Ext.m */,
 				2A5EBBCB1D8943F500EC80D2 /* SSKeychain+FTUtil.h */,
 				2A5EBBCC1D8943F500EC80D2 /* SSKeychain+FTUtil.m */,
+				2A5EBC001D92254900EC80D2 /* NSAttributedString+Ext.h */,
+				2A5EBC011D92254900EC80D2 /* NSAttributedString+Ext.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -201,6 +252,7 @@
 				2A91A9851D40F0410050E423 /* Info.plist */,
 				2AA5E7541D7FB2BD00099E02 /* FanTong-OC.pch */,
 				2A91A9751D40F0410050E423 /* main.m */,
+				2A5EBBF71D90D2C000EC80D2 /* storehouse.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,6 +280,8 @@
 			children = (
 				2AA5E7471D7FB19700099E02 /* FTViewModel.h */,
 				2AA5E7481D7FB19700099E02 /* FTViewModel.m */,
+				2A5EBBE71D8E8A1C00EC80D2 /* FTTableViewModel.h */,
+				2A5EBBE81D8E8A1C00EC80D2 /* FTTableViewModel.m */,
 			);
 			name = BaseClass;
 			sourceTree = "<group>";
@@ -254,6 +308,8 @@
 				2A7378D81D81671A00C604F3 /* base64.m */,
 				2A7378D91D81671A00C604F3 /* HmacSha1.h */,
 				2A7378DA1D81671A00C604F3 /* HmacSha1.m */,
+				2A5EBBF41D8F8F5700EC80D2 /* FTNetWorking.h */,
+				2A5EBBF51D8F8F5700EC80D2 /* FTNetWorking.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -271,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				2AC265EA1D5CA76100763253 /* BaseClass */,
+				2A5EBBD71D8E376D00EC80D2 /* CustomView */,
 				2AC265EE1D5CA7FA00763253 /* FTHomePageViewController.h */,
 				2AC265EF1D5CA7FA00763253 /* FTHomePageViewController.m */,
 				2AC265F11D5CA81600763253 /* FTMessageViewController.h */,
@@ -293,6 +350,8 @@
 				2AA5E74B1D7FB1AD00099E02 /* FTLoginViewModel.m */,
 				2A5EBBCE1D894E6E00EC80D2 /* FTHomepageViewModel.h */,
 				2A5EBBCF1D894E6E00EC80D2 /* FTHomepageViewModel.m */,
+				2A5EBBE41D8E86D000EC80D2 /* FTTimelineCellViewModel.h */,
+				2A5EBBE51D8E86D000EC80D2 /* FTTimelineCellViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -394,7 +453,7 @@
 				TargetAttributes = {
 					2A91A9701D40F0410050E423 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = T33D97QCKP;
+						DevelopmentTeam = SLFN93H774;
 					};
 					2A91A9891D40F0410050E423 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -432,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7379421D82BE1D00C604F3 /* HYBNetworking in Resources */,
+				2A5EBBF81D90D2C000EC80D2 /* storehouse.plist in Resources */,
 				2A91A9841D40F0410050E423 /* LaunchScreen.storyboard in Resources */,
 				2A91A9811D40F0410050E423 /* Assets.xcassets in Resources */,
 				2A91A97F1D40F0410050E423 /* Main.storyboard in Resources */,
@@ -508,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A5EBBCD1D8943F500EC80D2 /* SSKeychain+FTUtil.m in Sources */,
+				2A5EBBE31D8E3B4000EC80D2 /* FTStatusToolBar.m in Sources */,
 				2AC265F61D5CA82F00763253 /* FTSearchViewController.m in Sources */,
 				2A91A9791D40F0410050E423 /* AppDelegate.m in Sources */,
 				2AA5E7571D7FB44400099E02 /* UIViewExt.m in Sources */,
@@ -518,14 +579,21 @@
 				2AEE69321D5DEBF000933620 /* FTLoginViewController.m in Sources */,
 				2AA5E74C1D7FB1AD00099E02 /* FTLoginViewModel.m in Sources */,
 				2A5EBBD61D894F5500EC80D2 /* FTModels.m in Sources */,
+				2A5EBBFE1D90DE6100EC80D2 /* BarItem.m in Sources */,
 				2AEF16E01D8017CD0062047B /* FTRouter.m in Sources */,
+				2A5EBC021D92254900EC80D2 /* NSAttributedString+Ext.m in Sources */,
+				2A5EBBDA1D8E37A700EC80D2 /* FTTimelineTableViewCell.m in Sources */,
 				2AC265ED1D5CA7A500763253 /* FTViewController.m in Sources */,
 				2A7378DC1D81671A00C604F3 /* HmacSha1.m in Sources */,
 				2A7378DB1D81671A00C604F3 /* base64.m in Sources */,
+				2A5EBBE61D8E86D000EC80D2 /* FTTimelineCellViewModel.m in Sources */,
+				2A5EBBFF1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m in Sources */,
 				2AC265F91D5CA84000763253 /* FTProfileViewController.m in Sources */,
+				2A5EBBF61D8F8F5700EC80D2 /* FTNetWorking.m in Sources */,
 				2A7379461D86AC6E00C604F3 /* NSString+Ext.m in Sources */,
 				2A7378D11D8164CC00C604F3 /* NSData+Base64.m in Sources */,
 				2A91A9761D40F0410050E423 /* main.m in Sources */,
+				2A5EBBE91D8E8A1C00EC80D2 /* FTTableViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,9 +741,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FanTong-OC/FanTong-OC.pch";
 				INFOPLIST_FILE = "FanTong-OC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OCC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -692,9 +760,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FanTong-OC/FanTong-OC.pch";
 				INFOPLIST_FILE = "FanTong-OC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OCC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

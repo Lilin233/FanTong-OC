@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class User;
 @class Photo;
 
 @interface FTModels : NSObject
@@ -59,7 +60,7 @@
 @property (nonatomic, copy)NSString *in_reply_to_screen_name;
 
 /// 发送此消息之用户信息
-//@property (nonatomic, strong)User *user;
+@property (nonatomic, strong)User *user;
 
 /// 消息中图片信息
 @property (nonatomic, strong)Photo *photo;
@@ -68,9 +69,17 @@
 
 @interface Photo : NSObject
 
+/// image url
 @property (nonatomic, copy)NSString *imageurl;
-@property (nonatomic, copy)NSString *thumburl;
+
+/// 大图url
 @property (nonatomic, copy)NSString *largeurl;
+
+/// 缩略图url
+@property (nonatomic, copy)NSString *thumburl;
+
+/// (未知图片url)
+@property (nonatomic, copy)NSString *url;
 
 @end
 
@@ -97,111 +106,66 @@
 ///< 用户自述
 @property (nonatomic, copy)NSString *descriptions;
 
+///< 用户头像地址
+@property (nonatomic, copy)NSString *profile_image_url;
 
-//    var descriptions: String = ""
-//    ///< 用户头像地址
-//    var profile_image_url: String = ""
-//    ///< 用户高清头像地址
-//    var profile_image_url_large: String = ""
-//    ///< 用户页面地址
-//    var url: String = ""
-//    ///< 用户是否设置隐私保护
-//    var protected: Bool = false
-//    ///< 用户关注用户数
-//    var followers_count: Int = 0
-//    ///< 用户好友数
-//    var friends_count: Int = 0
-//    ///< 用户收藏消息数
-//    var favourites_count: Int = 0
-//    ///< 用户消息数
-//    var statuses_count: Int = 0
-//    ///< 该用户是被当前登录用户关注
-//    var following: Bool = false
-//    ///< 当前登录用户是否已对该用户发出关注请求
-//    var notifications: Bool = false
-//    ///< 用户注册时间
-//    var created_at: String = ""
-//    ///< ref: UTC offset
-//    var utc_offset: Int = 0
-//    ///< 用户用户自定义页面背景颜色
-//    var profile_background_color: String = ""
-//    ///< 用户用户自定义文字颜色
-//    var profile_text_color: String = ""
-//    ///< 用户用户自定义链接颜色
-//    var profile_link_color: String = ""
-//    ///< 用户用户自定义侧边栏颜色
-//    var profile_sidebar_fill_color: String = ""
-//    ///< 用户用户自定义侧边栏边框颜色
-//    var profile_sidebar_border_color: String = ""
-//    ///< 用户用户自定义背景图片地址
-//    var profile_background_image_url: String = ""
-//    ///< 是否平铺用户用户自定义背景图片地址
-//    var profile_background_tile: Bool = false
-//    ///< Status
-//    var status: Status?
+///< 用户高清头像地址
+@property (nonatomic, copy)NSString *profile_image_url_large;
+
+///< 用户页面地址
+@property (nonatomic, copy)NSString *url;
+
+///< 用户是否设置隐私保护
+@property (nonatomic, copy)NSString *user_protected;
+
+///< 用户关注用户数
+@property (nonatomic, copy)NSString *followers_count;
+
+///< 用户好友数
+@property (nonatomic, assign)NSInteger friends_count;
+
+///< 用户收藏消息数
+@property (nonatomic, assign)NSInteger favourites_count;
+
+///< 用户消息数
+@property (nonatomic, assign)NSInteger statuses_count;
+
+///< 该用户是被当前登录用户关注
+@property (nonatomic, assign)BOOL following;
+
+///< 当前登录用户是否已对该用户发出关注请求
+@property (nonatomic, assign)BOOL notifications;
+
+///< 用户注册时间
+@property (nonatomic, copy)NSString *created_at;
+
+///< ref: UTC offset
+@property (nonatomic, assign)NSInteger *utc_offset;
+
+///< 用户用户自定义页面背景颜色
+@property (nonatomic, copy)NSString *profile_background_color;
+
+///< 用户用户自定义文字颜色
+@property (nonatomic, copy)NSString *profile_text_color;
+
+///< 用户用户自定义链接颜色
+@property (nonatomic, copy)NSString *profile_link_color;
+
+///< 用户用户自定义侧边栏颜色
+@property (nonatomic, copy)NSString *profile_sidebar_fill_color;
+
+///< 用户用户自定义侧边栏边框颜色
+@property (nonatomic, copy)NSString *profile_sidebar_border_color;
+
+///< 用户用户自定义背景图片地址
+@property (nonatomic, copy)NSString *profile_background_image_url;
+
+///< 是否平铺用户用户自定义背景图片地址
+@property (nonatomic, copy)NSString *profile_background_tile;
+
+///< Status
+@property (nonatomic, strong) Status *status;
 
 
 @end
 
-//class User:NSObject {
-//    override init() {
-//        super.init()
-//    }
-//    ///< 用户id
-//    var id: String = ""
-//    ///< 用户姓名
-//    var name: String = ""
-//    ///< 用户昵称
-//    var screen_name: String = ""
-//    ///< 用户地址
-//    var location: String = ""
-//    ///< 用户性别
-//    var gender: String = ""
-//    ///< 用户生日信息
-//    var birthday: String = ""
-//    ///< 用户自述
-//    var descriptions: String = ""
-//    ///< 用户头像地址
-//    var profile_image_url: String = ""
-//    ///< 用户高清头像地址
-//    var profile_image_url_large: String = ""
-//    ///< 用户页面地址
-//    var url: String = ""
-//    ///< 用户是否设置隐私保护
-//    var protected: Bool = false
-//    ///< 用户关注用户数
-//    var followers_count: Int = 0
-//    ///< 用户好友数
-//    var friends_count: Int = 0
-//    ///< 用户收藏消息数
-//    var favourites_count: Int = 0
-//    ///< 用户消息数
-//    var statuses_count: Int = 0
-//    ///< 该用户是被当前登录用户关注
-//    var following: Bool = false
-//    ///< 当前登录用户是否已对该用户发出关注请求
-//    var notifications: Bool = false
-//    ///< 用户注册时间
-//    var created_at: String = ""
-//    ///< ref: UTC offset
-//    var utc_offset: Int = 0
-//    ///< 用户用户自定义页面背景颜色
-//    var profile_background_color: String = ""
-//    ///< 用户用户自定义文字颜色
-//    var profile_text_color: String = ""
-//    ///< 用户用户自定义链接颜色
-//    var profile_link_color: String = ""
-//    ///< 用户用户自定义侧边栏颜色
-//    var profile_sidebar_fill_color: String = ""
-//    ///< 用户用户自定义侧边栏边框颜色
-//    var profile_sidebar_border_color: String = ""
-//    ///< 用户用户自定义背景图片地址
-//    var profile_background_image_url: String = ""
-//    ///< 是否平铺用户用户自定义背景图片地址
-//    var profile_background_tile: Bool = false
-//    ///< Status
-//    var status: Status?
-//    
-//    func modelCustomPropertyMapper() -> NSDictionary{
-//        return NSDictionary(dictionary: ["descriptions" : "description"])
-//    }

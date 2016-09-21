@@ -15,6 +15,17 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Appirater (2.0.5)
+  - DTCoreText (1.6.17):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.10)
+  - DTFoundation/DTAnimatedGIF (1.7.10)
+  - DTFoundation/DTHTMLParser (1.7.10):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.10):
+    - DTFoundation/Core
   - DZNEmptyDataSet (1.5.2)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
@@ -87,6 +98,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Appirater
+  - DTCoreText
   - DZNEmptyDataSet (~> 1.5.1)
   - FMDB
   - FormatterKit (~> 1.8.0)
@@ -127,6 +139,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Appirater: e7c0a47fb67ee5041ce8479e6ba960927fb40264
+  DTCoreText: 3ea8bba23dd2141ba18adb227a7dd33a822df1c4
+  DTFoundation: 3b6b1b817d2a7fb02e7eaf2596c922a68145bd43
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
@@ -151,6 +165,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: e7b6669bebfc4f151daa0fdec3c8c24c8dc3a24e
   YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
-PODFILE CHECKSUM: eab53054f5dc6820637bcc5bf62b675ba589ab89
+PODFILE CHECKSUM: f52e84744e91e58cd68904cd67a9db08f377098b
 
 COCOAPODS: 1.0.0

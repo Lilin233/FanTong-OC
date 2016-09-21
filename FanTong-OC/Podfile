@@ -22,5 +22,7 @@ target 'FanTong-OC' do
   pod 'LCFInfiniteScrollView', :git => 'https://github.com/leichunfeng/LCFInfiniteScrollView.git'
   pod 'TDOAuth'
   pod 'AFNetworking', '~> 3.0'
+  pod 'DTCoreText'
+
 end
 

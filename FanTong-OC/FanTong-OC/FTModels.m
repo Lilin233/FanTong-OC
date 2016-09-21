@@ -11,3 +11,31 @@
 @implementation FTModels
 
 @end
+
+@implementation Status
+
++ (NSDictionary *)modelCustomPropertyMapper{
+    return @{@"status_id": @"id"};
+}
+
+
+
+@end
+
+@implementation Photo
+
+
+@end
+
+@implementation User
+
+
++ (NSDictionary *)modelCustomPropertyMapper{
+    return @{@"user_id": @"id",
+             @"user_protected": @"protected",
+             @"descriptions": @"description"};
+}
+
+
+
+@end
