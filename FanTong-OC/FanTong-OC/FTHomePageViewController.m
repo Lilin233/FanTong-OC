@@ -33,7 +33,7 @@
     [self.viewModel.requestRemoteDataCommand execute:nil];
     self.timelineTableView.alwaysBounceVertical = YES;
 
-    self.storeHouseRefreshControl = [CBStoreHouseRefreshControl attachToScrollView:self.timelineTableView target:self refreshAction:@selector(refreshTriggered:) plist:@"storehouse" color:[UIColor blackColor] lineWidth:1.5 dropHeight:100 scale:1 horizontalRandomness:150 reverseLoadingAnimation:YES internalAnimationFactor:0.5];
+    self.storeHouseRefreshControl = [CBStoreHouseRefreshControl attachToScrollView:self.timelineTableView target:self refreshAction:@selector(refreshTriggered:) plist:@"fanci" color:[UIColor blackColor] lineWidth:1.5 dropHeight:100 scale:1 horizontalRandomness:150 reverseLoadingAnimation:YES internalAnimationFactor:0.5];
     
     @weakify(self)
     [self.timelineTableView addInfiniteScrollingWithActionHandler:^{

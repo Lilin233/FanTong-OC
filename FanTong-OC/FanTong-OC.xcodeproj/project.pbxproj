@@ -36,6 +36,7 @@
 		2AA5E74C1D7FB1AD00099E02 /* FTLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5E74B1D7FB1AD00099E02 /* FTLoginViewModel.m */; };
 		2AA5E7571D7FB44400099E02 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5E7561D7FB44400099E02 /* UIViewExt.m */; };
 		2AAEEF1F1D93B9AB0035A198 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAEEF1E1D93B9AB0035A198 /* CoreFoundation.framework */; };
+		2AAEEF211D93D2B50035A198 /* fanci.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AAEEF201D93D2B50035A198 /* fanci.plist */; };
 		2AC265ED1D5CA7A500763253 /* FTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265EC1D5CA7A500763253 /* FTViewController.m */; };
 		2AC265F01D5CA7FA00763253 /* FTHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265EF1D5CA7FA00763253 /* FTHomePageViewController.m */; };
 		2AC265F31D5CA81600763253 /* FTMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265F21D5CA81600763253 /* FTMessageViewController.m */; };
@@ -122,6 +123,7 @@
 		2AA5E7561D7FB44400099E02 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		2AA5E75A1D7FED9300099E02 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		2AAEEF1E1D93B9AB0035A198 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2AAEEF201D93D2B50035A198 /* fanci.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fanci.plist; sourceTree = "<group>"; };
 		2AC265EB1D5CA7A500763253 /* FTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTViewController.h; sourceTree = "<group>"; };
 		2AC265EC1D5CA7A500763253 /* FTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTViewController.m; sourceTree = "<group>"; };
 		2AC265EE1D5CA7FA00763253 /* FTHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHomePageViewController.h; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				2A91A9851D40F0410050E423 /* Info.plist */,
 				2AA5E7541D7FB2BD00099E02 /* FanTong-OC.pch */,
 				2A91A9751D40F0410050E423 /* main.m */,
+				2AAEEF201D93D2B50035A198 /* fanci.plist */,
 				2A5EBBF71D90D2C000EC80D2 /* storehouse.plist */,
 			);
 			name = "Supporting Files";
@@ -503,6 +506,7 @@
 				2A5EBBF81D90D2C000EC80D2 /* storehouse.plist in Resources */,
 				2A91A9841D40F0410050E423 /* LaunchScreen.storyboard in Resources */,
 				2A91A9811D40F0410050E423 /* Assets.xcassets in Resources */,
+				2AAEEF211D93D2B50035A198 /* fanci.plist in Resources */,
 				2A91A97F1D40F0410050E423 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
