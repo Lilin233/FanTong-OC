@@ -41,7 +41,7 @@
 
 #define kStatusTitleFont [UIFont boldSystemFontOfSize:35]
 #define kStatusContentFont [UIFont boldSystemFontOfSize:20]
-#define kStatusDateFont [UIFont boldSystemFontOfSize:14]
+#define kStatusDateFont [UIFont systemFontOfSize:12]
 ///< 头像高度
 static CGFloat const kStatusAvatarHeight = 60;
 static CGFloat const kStatusAvatarCornerRadius = 6;
@@ -59,12 +59,17 @@ static CGFloat const kStatusToolbarHeight = 40;
 static CGFloat const kStatusTollbarButtonWidth = 60;
 ///< status 内容宽度
 #define kStatusContetnWidth SCREEN_WIDTH - kStatusAvatarMarginLeft * 2
+///< status date 宽度
+static CGFloat const kStatusDateWidth = 160;
+/// status分页数
+#define kStatusCount @40
 
 ///------
 /// Color
 ///------
 #define UIColorFromRGB(rgbValue)    [UIColor colorWithRed : ((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green : ((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue : ((float)(rgbValue & 0xFF)) / 255.0 alpha : 1.0]
 #define HTML_LINK_COLOR UIColorFromRGB(0x1b9bf0)
+
 ///-----------
 /// SSKeychain
 ///-----------

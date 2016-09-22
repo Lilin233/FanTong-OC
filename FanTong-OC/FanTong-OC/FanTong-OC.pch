@@ -26,4 +26,5 @@
     #import <DTCoreText/DTCoreText.h>
     #import "NSString+Ext.h"
     #import "NSAttributedString+Ext.h"
+    #import "NSMutableArray+Ext.h"
 #endif /* FanTong_OC_pch */

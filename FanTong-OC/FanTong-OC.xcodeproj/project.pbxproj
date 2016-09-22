@@ -19,6 +19,7 @@
 		2A5EBBFE1D90DE6100EC80D2 /* BarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBFB1D90DE6100EC80D2 /* BarItem.m */; };
 		2A5EBBFF1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBFD1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m */; };
 		2A5EBC021D92254900EC80D2 /* NSAttributedString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBC011D92254900EC80D2 /* NSAttributedString+Ext.m */; };
+		2A5EBC051D92607A00EC80D2 /* NSMutableArray+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBC041D92607A00EC80D2 /* NSMutableArray+Ext.m */; };
 		2A7378D11D8164CC00C604F3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7378D01D8164CC00C604F3 /* NSData+Base64.m */; };
 		2A7378DB1D81671A00C604F3 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7378D81D81671A00C604F3 /* base64.m */; };
 		2A7378DC1D81671A00C604F3 /* HmacSha1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7378DA1D81671A00C604F3 /* HmacSha1.m */; };
@@ -34,6 +35,7 @@
 		2AA5E7491D7FB19700099E02 /* FTViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5E7481D7FB19700099E02 /* FTViewModel.m */; };
 		2AA5E74C1D7FB1AD00099E02 /* FTLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5E74B1D7FB1AD00099E02 /* FTLoginViewModel.m */; };
 		2AA5E7571D7FB44400099E02 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5E7561D7FB44400099E02 /* UIViewExt.m */; };
+		2AAEEF1F1D93B9AB0035A198 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAEEF1E1D93B9AB0035A198 /* CoreFoundation.framework */; };
 		2AC265ED1D5CA7A500763253 /* FTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265EC1D5CA7A500763253 /* FTViewController.m */; };
 		2AC265F01D5CA7FA00763253 /* FTHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265EF1D5CA7FA00763253 /* FTHomePageViewController.m */; };
 		2AC265F31D5CA81600763253 /* FTMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265F21D5CA81600763253 /* FTMessageViewController.m */; };
@@ -86,6 +88,8 @@
 		2A5EBBFD1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBStoreHouseRefreshControl.m; sourceTree = "<group>"; };
 		2A5EBC001D92254900EC80D2 /* NSAttributedString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Ext.h"; sourceTree = "<group>"; };
 		2A5EBC011D92254900EC80D2 /* NSAttributedString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Ext.m"; sourceTree = "<group>"; };
+		2A5EBC031D92607A00EC80D2 /* NSMutableArray+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Ext.h"; sourceTree = "<group>"; };
+		2A5EBC041D92607A00EC80D2 /* NSMutableArray+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Ext.m"; sourceTree = "<group>"; };
 		2A7378CF1D8164CC00C604F3 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		2A7378D01D8164CC00C604F3 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		2A7378D71D81671A00C604F3 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 		2AA5E7551D7FB44400099E02 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		2AA5E7561D7FB44400099E02 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		2AA5E75A1D7FED9300099E02 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		2AAEEF1E1D93B9AB0035A198 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2AC265EB1D5CA7A500763253 /* FTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTViewController.h; sourceTree = "<group>"; };
 		2AC265EC1D5CA7A500763253 /* FTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTViewController.m; sourceTree = "<group>"; };
 		2AC265EE1D5CA7FA00763253 /* FTHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHomePageViewController.h; sourceTree = "<group>"; };
@@ -140,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AAEEF1F1D93B9AB0035A198 /* CoreFoundation.framework in Frameworks */,
 				72F931C1308827197B3BF4A0 /* libPods-FanTong-OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +207,8 @@
 				2A5EBBCC1D8943F500EC80D2 /* SSKeychain+FTUtil.m */,
 				2A5EBC001D92254900EC80D2 /* NSAttributedString+Ext.h */,
 				2A5EBC011D92254900EC80D2 /* NSAttributedString+Ext.m */,
+				2A5EBC031D92607A00EC80D2 /* NSMutableArray+Ext.h */,
+				2A5EBC041D92607A00EC80D2 /* NSMutableArray+Ext.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -368,6 +376,7 @@
 		83916A946D5BF7942EB1EDB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AAEEF1E1D93B9AB0035A198 /* CoreFoundation.framework */,
 				999E85A35E533C1DC0700BDA /* libPods-FanTong-OC.a */,
 			);
 			name = Frameworks;
@@ -572,6 +581,7 @@
 				2AC265F61D5CA82F00763253 /* FTSearchViewController.m in Sources */,
 				2A91A9791D40F0410050E423 /* AppDelegate.m in Sources */,
 				2AA5E7571D7FB44400099E02 /* UIViewExt.m in Sources */,
+				2A5EBC051D92607A00EC80D2 /* NSMutableArray+Ext.m in Sources */,
 				2AC265F31D5CA81600763253 /* FTMessageViewController.m in Sources */,
 				2AA5E7491D7FB19700099E02 /* FTViewModel.m in Sources */,
 				2A5EBBD01D894E6E00EC80D2 /* FTHomepageViewModel.m in Sources */,

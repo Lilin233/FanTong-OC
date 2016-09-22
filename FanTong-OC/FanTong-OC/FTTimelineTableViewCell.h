@@ -17,8 +17,16 @@
 
 @end
 
+@protocol TimeLineCellDelegate <NSObject>
+
+- (void)statusAvatarClick:(FTTimelineTableViewCell *)cell;
+- (void)statusImageClick:(UIImageView *)imageView;
+@end
+
+
 @interface FTTimelineTableViewCell : UITableViewCell
 
 @property (nonatomic, strong)FTTimelineCellViewModel *viewModel;
 @property (nonatomic, weak)id<StatusToolbarDelegate>delegate;
+@property (nonatomic, weak)id<TimeLineCellDelegate>cellDelegate;
 @end

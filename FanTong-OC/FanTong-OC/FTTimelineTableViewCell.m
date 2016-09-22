@@ -32,10 +32,12 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self initSubViews];
     }
     return self;
 }
+
 #pragma mark Add SubViews
 - (void)initSubViews{
     _avatarImageView = ({
@@ -63,16 +65,21 @@
     });
     
     _statusDateLabel = ({
-        UILabel *label = [[UILabel alloc]initWithFrame:CGRectZero];
-        label.font = kStatusContentFont;
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH - kStatusDateWidth - kStatusAvatarMarginLeft, kStatusAvatarMarginTop, kStatusDateWidth, _avatarImageView.height)];
+        label.font = kStatusDateFont;
+        label.textColor = [UIColor grayColor];
+        label.textAlignment = NSTextAlignmentRight;
         [self addSubview:label];
         label;
     });
     
     _statusImageView = ({
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, self.height - kStatusToolbarHeight - kStatusImageViewHeight, SCREEN_WIDTH, kStatusImageViewHeight)];
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTap:)];
+        [imageView addGestureRecognizer:tap];
+        imageView.userInteractionEnabled = YES;
         [self addSubview:imageView];
         imageView;
     });
@@ -93,7 +100,13 @@
     _statusTitleLabel.text = _viewModel.status.user.screen_name;
     [_statusContentLabel setHeight:_viewModel.contentHeight];
     _statusContentLabel.attributedString = [_viewModel.status.text formatterHTMLAttributeString];
+    _statusDateLabel.text = [_viewModel.status.created_at formatterStatusTime];
     [_statusImageView sd_setImageWithURL:[NSURL URLWithString:_viewModel.status.photo.imageurl]];
+}
+- (void)imageTap:(UITapGestureRecognizer *)tap{
+    if ([_cellDelegate respondsToSelector:@selector(statusImageClick:)]) {
+        [_cellDelegate statusImageClick:(UIImageView *)tap.view];
+    }
 }
 
 #pragma mark Custom Accessors

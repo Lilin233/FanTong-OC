@@ -11,4 +11,5 @@
 @interface NSString (Ext)
 - (NSAttributedString *)formatterHTMLAttributeString;
 
+- (NSString *)formatterStatusTime;
 @end
