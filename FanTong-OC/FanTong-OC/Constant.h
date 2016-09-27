@@ -64,6 +64,21 @@ static CGFloat const kStatusDateWidth = 160;
 /// status分页数
 #define kStatusCount @40
 
+///-----
+/// Direct Message
+///-----
+static CGFloat const kDirectMessageConversationListHeight = 60;
+static CGFloat const kDirectMessageConversationListAvatarHeight = 40;
+#define kDirectMessageConversationListAvatarTopMarge (kDirectMessageConversationListHeight - kDirectMessageConversationListAvatarHeight) / 2
+static CGFloat const kDirectMessageConversationListSenderHeight = 25;
+static CGFloat const kDirectMessageConversationListSenderWidth = 200;
+static CGFloat const kDirectMessageConversationListSenderTopMargin = 10;
+static CGFloat const kDirectMessageConversationListContentHeight = 20;
+#define kDirectMessageConversationListSenderFont [UIFont systemFontOfSize:18]
+#define kDirectMessageConversationListContentFont [UIFont systemFontOfSize:14]
+
+
+
 ///------
 /// Color
 ///------
@@ -106,7 +121,16 @@ typedef void (^faildBlock)(NSError *error);
 //USERS
 #define FANFOU_USERS_SHOW @"http://api.fanfou.com/users/show.json"
 
+//ACCOUNT
+#define FANFOU_VERIFY_CRDENTIALS @"/account/verify_credentials.json"
+
 //Statuses
 #define FANFOU_STATUSES_HOME_TIMELINE  @"/statuses/home_timeline.json"
 #define FANFOU_STATUSES_UPDATE  @"/statuses/update.json"
 
+
+//direct message
+#define FANFOU_DIRECT_MESSAGE_CONVERSATION_LIST @"/direct_messages/conversation_list.json"
+#define FANFOU_DIRECT_MESSAGE_CONVERSATION @"/direct_messages/conversation.json"
+#define FANFOU_DIRECT_MESSAGE_CONVERSATION_NEW @"/direct_messages/new.json"
+#define FANFOU_DIRECT_MESSAGE_CONVERSATION_DESTORY  @"/direct_messages/destroy.json"

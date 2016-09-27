@@ -12,23 +12,27 @@
 
 @end
 
+/// Status
 @implementation Status
 
 + (NSDictionary *)modelCustomPropertyMapper{
     return @{@"status_id": @"id"};
 }
 
-
+//+ (NSString *)primaryKey{
+//    return @"status_id";
+//}
 
 @end
 
+/// 照片信息
 @implementation Photo
 
 
 @end
 
+/// 用户
 @implementation User
-
 
 + (NSDictionary *)modelCustomPropertyMapper{
     return @{@"user_id": @"id",
@@ -36,6 +40,22 @@
              @"descriptions": @"description"};
 }
 
++ (NSString *)primaryKey{
+    return @"user_id";
+}
+@end
+
+/// 私信
+
+@implementation DirectMessage
+
++ (NSDictionary *)modelCustomPropertyMapper{
+    return @{@"directMessage_id": @"id"};
+}
+
+@end
+
+@implementation ConversationList
 
 
 @end

@@ -78,6 +78,9 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - Realm (0.99.1):
+    - Realm/Headers (= 0.99.1)
+  - Realm/Headers (0.99.1)
   - Reveal-iOS-SDK (1.6.2)
   - SDVersion (2.6)
   - SDWebImage (3.7.5):
@@ -111,6 +114,7 @@ DEPENDENCIES:
   - OcticonsIOS (from `https://github.com/jacksonh/OcticonsIOS.git`, commit `4bd3b21`)
   - Ono (~> 1.2.0)
   - ReactiveCocoa (~> 2.5)
+  - Realm
   - Reveal-iOS-SDK (~> 1.6.0)
   - SDVersion
   - SDWebImage (~> 3.7.1)
@@ -156,6 +160,7 @@ SPEC CHECKSUMS:
   Ono: 80b1c686777d3f6d5d5ce6fcac8a74afef4ca197
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  Realm: 522a0cc8e1f8755ee56d7dc16ca0fc380d045766
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
   SDVersion: c036f7890279d188c17f5701b9feea0d93b9f8ee
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
@@ -168,6 +173,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: e7b6669bebfc4f151daa0fdec3c8c24c8dc3a24e
   YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
-PODFILE CHECKSUM: dc505dee3f33c230ba2f4fb298566c5c4ddd8a22
+PODFILE CHECKSUM: 90626b08de8c8f4723e664fd0bac256336812a77
 
 COCOAPODS: 1.0.0

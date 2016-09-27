@@ -24,5 +24,6 @@ target 'FanTong-OC' do
   pod 'AFNetworking', '~> 3.0'
   pod 'DTCoreText'
   pod 'Vertigo'
+  pod 'Realm'
 end
 

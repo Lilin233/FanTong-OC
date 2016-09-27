@@ -7,6 +7,7 @@
 //
 
 #import "FTLoginViewModel.h"
+#import "FTAppBean.h"
 @implementation FTLoginViewModel
 
 - (void)initialize {
@@ -44,12 +45,33 @@
                 [SSKeychain setPassword:self.password];
                 [SSKeychain setAccessToken:token];
                 [SSKeychain setSecret:secret];
+
                 
-                [subscriber sendCompleted];
-                UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-                UIViewController *rootNaviVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"rootNavicationController"];
-                UIWindow *window = [UIApplication sharedApplication].keyWindow;
-                window.rootViewController = rootNaviVC;
+                NSMutableURLRequest *URLRequest = [[TDOAuth URLRequestForPath:FANFOU_VERIFY_CRDENTIALS GETParameters:@{@"mode": @"lite"} host:FANFOU_API_HOST consumerKey:FANFOU_OAUTH_CONSUMER_KEY consumerSecret:FANFOU_OAUTH_CONSUMER_SECRET accessToken:token tokenSecret:secret] mutableCopy];
+
+                [FTNetWorking requestRemoteDataWithRequest:URLRequest returnJSON:YES complete:^(id responseObject, NSError *error) {
+                    if (!error && ![responseString containsString:@"<error>"]) {
+                        User *user = [User modelWithJSON:responseObject];
+                        RLMRealm *realm = [RLMRealm defaultRealm];
+                        [realm beginWriteTransaction];
+                        [realm addObject:user];
+                        [realm commitWriteTransaction];
+                        FTAppBean *bean = [FTAppBean shareInstance];
+                        bean.loginUser = user;
+                        
+                        [subscriber sendCompleted];
+                        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+                        UIViewController *rootNaviVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"rootNavicationController"];
+                        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+                        window.rootViewController = rootNaviVC;
+
+                    
+                    }else{
+                        NSLog(@"error=====%@", error);
+                        [subscriber sendError:error];
+                    }
+                }];
+
                 
             } else {
                 NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];

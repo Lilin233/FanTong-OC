@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1F30EF1D98F6DE00C4F5A7 /* FTMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F30EE1D98F6DE00C4F5A7 /* FTMessageTableViewCell.m */; };
+		2A1F30F21D9902BB00C4F5A7 /* FTDirectMessageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F30F11D9902BB00C4F5A7 /* FTDirectMessageViewModel.m */; };
+		2A1F30F51D99103F00C4F5A7 /* FTDirectMessageCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F30F41D99103F00C4F5A7 /* FTDirectMessageCellViewModel.m */; };
+		2A1F30F81D9A0E1800C4F5A7 /* FTAppBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F30F71D9A0E1800C4F5A7 /* FTAppBean.m */; };
+		2A1F30FB1D9A4C3300C4F5A7 /* FTConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F30FA1D9A4C3300C4F5A7 /* FTConversationListViewController.m */; };
+		2A1F30FE1D9A4F7D00C4F5A7 /* FTConversationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F30FD1D9A4F7D00C4F5A7 /* FTConversationTableViewCell.m */; };
+		2A1F31011D9A560700C4F5A7 /* FTConversationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F31001D9A560700C4F5A7 /* FTConversationViewModel.m */; };
+		2A1F31041D9A572A00C4F5A7 /* FTConversationCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F31031D9A572A00C4F5A7 /* FTConversationCellViewModel.m */; };
 		2A5EBBCD1D8943F500EC80D2 /* SSKeychain+FTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBCC1D8943F500EC80D2 /* SSKeychain+FTUtil.m */; };
 		2A5EBBD01D894E6E00EC80D2 /* FTHomepageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBCF1D894E6E00EC80D2 /* FTHomepageViewModel.m */; };
 		2A5EBBD61D894F5500EC80D2 /* FTModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBD51D894F5500EC80D2 /* FTModels.m */; };
@@ -66,6 +74,22 @@
 
 /* Begin PBXFileReference section */
 		0C4850EFBE6E96C6E7A5B9B5 /* Pods-FanTong-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FanTong-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FanTong-OC/Pods-FanTong-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		2A1F30ED1D98F6DE00C4F5A7 /* FTMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMessageTableViewCell.h; sourceTree = "<group>"; };
+		2A1F30EE1D98F6DE00C4F5A7 /* FTMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMessageTableViewCell.m; sourceTree = "<group>"; };
+		2A1F30F01D9902BB00C4F5A7 /* FTDirectMessageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDirectMessageViewModel.h; sourceTree = "<group>"; };
+		2A1F30F11D9902BB00C4F5A7 /* FTDirectMessageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDirectMessageViewModel.m; sourceTree = "<group>"; };
+		2A1F30F31D99103F00C4F5A7 /* FTDirectMessageCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDirectMessageCellViewModel.h; sourceTree = "<group>"; };
+		2A1F30F41D99103F00C4F5A7 /* FTDirectMessageCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDirectMessageCellViewModel.m; sourceTree = "<group>"; };
+		2A1F30F61D9A0E1800C4F5A7 /* FTAppBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAppBean.h; sourceTree = "<group>"; };
+		2A1F30F71D9A0E1800C4F5A7 /* FTAppBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAppBean.m; sourceTree = "<group>"; };
+		2A1F30F91D9A4C3300C4F5A7 /* FTConversationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConversationListViewController.h; sourceTree = "<group>"; };
+		2A1F30FA1D9A4C3300C4F5A7 /* FTConversationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversationListViewController.m; sourceTree = "<group>"; };
+		2A1F30FC1D9A4F7D00C4F5A7 /* FTConversationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConversationTableViewCell.h; sourceTree = "<group>"; };
+		2A1F30FD1D9A4F7D00C4F5A7 /* FTConversationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversationTableViewCell.m; sourceTree = "<group>"; };
+		2A1F30FF1D9A560700C4F5A7 /* FTConversationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConversationViewModel.h; sourceTree = "<group>"; };
+		2A1F31001D9A560700C4F5A7 /* FTConversationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversationViewModel.m; sourceTree = "<group>"; };
+		2A1F31021D9A572A00C4F5A7 /* FTConversationCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConversationCellViewModel.h; sourceTree = "<group>"; };
+		2A1F31031D9A572A00C4F5A7 /* FTConversationCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversationCellViewModel.m; sourceTree = "<group>"; };
 		2A5EBBCB1D8943F500EC80D2 /* SSKeychain+FTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSKeychain+FTUtil.h"; sourceTree = "<group>"; };
 		2A5EBBCC1D8943F500EC80D2 /* SSKeychain+FTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSKeychain+FTUtil.m"; sourceTree = "<group>"; };
 		2A5EBBCE1D894E6E00EC80D2 /* FTHomepageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHomepageViewModel.h; sourceTree = "<group>"; };
@@ -176,6 +200,10 @@
 				2A5EBBD91D8E37A700EC80D2 /* FTTimelineTableViewCell.m */,
 				2A5EBBE11D8E3B4000EC80D2 /* FTStatusToolBar.h */,
 				2A5EBBE21D8E3B4000EC80D2 /* FTStatusToolBar.m */,
+				2A1F30ED1D98F6DE00C4F5A7 /* FTMessageTableViewCell.h */,
+				2A1F30EE1D98F6DE00C4F5A7 /* FTMessageTableViewCell.m */,
+				2A1F30FC1D9A4F7D00C4F5A7 /* FTConversationTableViewCell.h */,
+				2A1F30FD1D9A4F7D00C4F5A7 /* FTConversationTableViewCell.m */,
 			);
 			name = CustomView;
 			sourceTree = "<group>";
@@ -321,6 +349,8 @@
 				2A7378DA1D81671A00C604F3 /* HmacSha1.m */,
 				2A5EBBF41D8F8F5700EC80D2 /* FTNetWorking.h */,
 				2A5EBBF51D8F8F5700EC80D2 /* FTNetWorking.m */,
+				2A1F30F61D9A0E1800C4F5A7 /* FTAppBean.h */,
+				2A1F30F71D9A0E1800C4F5A7 /* FTAppBean.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -349,6 +379,8 @@
 				2AC265F81D5CA84000763253 /* FTProfileViewController.m */,
 				2AEE69301D5DEBF000933620 /* FTLoginViewController.h */,
 				2AEE69311D5DEBF000933620 /* FTLoginViewController.m */,
+				2A1F30F91D9A4C3300C4F5A7 /* FTConversationListViewController.h */,
+				2A1F30FA1D9A4C3300C4F5A7 /* FTConversationListViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -363,6 +395,14 @@
 				2A5EBBCF1D894E6E00EC80D2 /* FTHomepageViewModel.m */,
 				2A5EBBE41D8E86D000EC80D2 /* FTTimelineCellViewModel.h */,
 				2A5EBBE51D8E86D000EC80D2 /* FTTimelineCellViewModel.m */,
+				2A1F30F01D9902BB00C4F5A7 /* FTDirectMessageViewModel.h */,
+				2A1F30F11D9902BB00C4F5A7 /* FTDirectMessageViewModel.m */,
+				2A1F30F31D99103F00C4F5A7 /* FTDirectMessageCellViewModel.h */,
+				2A1F30F41D99103F00C4F5A7 /* FTDirectMessageCellViewModel.m */,
+				2A1F30FF1D9A560700C4F5A7 /* FTConversationViewModel.h */,
+				2A1F31001D9A560700C4F5A7 /* FTConversationViewModel.m */,
+				2A1F31021D9A572A00C4F5A7 /* FTConversationCellViewModel.h */,
+				2A1F31031D9A572A00C4F5A7 /* FTConversationCellViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -588,24 +628,32 @@
 				2A5EBC051D92607A00EC80D2 /* NSMutableArray+Ext.m in Sources */,
 				2AC265F31D5CA81600763253 /* FTMessageViewController.m in Sources */,
 				2AA5E7491D7FB19700099E02 /* FTViewModel.m in Sources */,
+				2A1F30EF1D98F6DE00C4F5A7 /* FTMessageTableViewCell.m in Sources */,
 				2A5EBBD01D894E6E00EC80D2 /* FTHomepageViewModel.m in Sources */,
 				2AC265F01D5CA7FA00763253 /* FTHomePageViewController.m in Sources */,
 				2AEE69321D5DEBF000933620 /* FTLoginViewController.m in Sources */,
+				2A1F30FE1D9A4F7D00C4F5A7 /* FTConversationTableViewCell.m in Sources */,
 				2AA5E74C1D7FB1AD00099E02 /* FTLoginViewModel.m in Sources */,
 				2A5EBBD61D894F5500EC80D2 /* FTModels.m in Sources */,
 				2A5EBBFE1D90DE6100EC80D2 /* BarItem.m in Sources */,
+				2A1F31011D9A560700C4F5A7 /* FTConversationViewModel.m in Sources */,
 				2AEF16E01D8017CD0062047B /* FTRouter.m in Sources */,
 				2A5EBC021D92254900EC80D2 /* NSAttributedString+Ext.m in Sources */,
 				2A5EBBDA1D8E37A700EC80D2 /* FTTimelineTableViewCell.m in Sources */,
 				2AC265ED1D5CA7A500763253 /* FTViewController.m in Sources */,
+				2A1F30FB1D9A4C3300C4F5A7 /* FTConversationListViewController.m in Sources */,
 				2A7378DC1D81671A00C604F3 /* HmacSha1.m in Sources */,
 				2A7378DB1D81671A00C604F3 /* base64.m in Sources */,
+				2A1F30F21D9902BB00C4F5A7 /* FTDirectMessageViewModel.m in Sources */,
 				2A5EBBE61D8E86D000EC80D2 /* FTTimelineCellViewModel.m in Sources */,
+				2A1F30F81D9A0E1800C4F5A7 /* FTAppBean.m in Sources */,
 				2A5EBBFF1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m in Sources */,
+				2A1F30F51D99103F00C4F5A7 /* FTDirectMessageCellViewModel.m in Sources */,
 				2AC265F91D5CA84000763253 /* FTProfileViewController.m in Sources */,
 				2A5EBBF61D8F8F5700EC80D2 /* FTNetWorking.m in Sources */,
 				2A7379461D86AC6E00C604F3 /* NSString+Ext.m in Sources */,
 				2A7378D11D8164CC00C604F3 /* NSData+Base64.m in Sources */,
+				2A1F31041D9A572A00C4F5A7 /* FTConversationCellViewModel.m in Sources */,
 				2A91A9761D40F0410050E423 /* main.m in Sources */,
 				2A5EBBE91D8E8A1C00EC80D2 /* FTTableViewModel.m in Sources */,
 			);

@@ -34,7 +34,20 @@
                     <view key="view" contentMode="scaleToFill" id="IAN-aw-KoS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vHz-0J-S5d">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vHz-0J-S5d" firstAttribute="leading" secondItem="IAN-aw-KoS" secondAttribute="leadingMargin" constant="-20" id="1pK-nX-sJ9"/>
+                            <constraint firstAttribute="trailing" secondItem="vHz-0J-S5d" secondAttribute="trailing" id="lK5-TX-zMc"/>
+                            <constraint firstItem="vHz-0J-S5d" firstAttribute="bottom" secondItem="7PT-Kj-4D5" secondAttribute="top" id="qIF-nW-Rig"/>
+                            <constraint firstItem="vHz-0J-S5d" firstAttribute="top" secondItem="4tu-cq-B2C" secondAttribute="bottom" id="zwx-k7-Y8w"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="消息" id="5qP-0x-l03"/>
                     <navigationItem key="navigationItem" title="消息" id="vr6-1q-dsT"/>
