@@ -28,7 +28,7 @@
             _directMessageLastContent = _dm.text;
             _createDate = [_dm.created_at formatterStatusTime];
             _otherid = listModel.otherid;
-
+            self.height = 60;
             
         }
         

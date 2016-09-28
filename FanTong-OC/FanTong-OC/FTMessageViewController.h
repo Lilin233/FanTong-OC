@@ -7,7 +7,7 @@
 //
 
 #import "FTViewController.h"
-
-@interface FTMessageViewController : FTViewController
+#import "FTTableViewController.h"
+@interface FTMessageViewController : FTTableViewController
 
 @end

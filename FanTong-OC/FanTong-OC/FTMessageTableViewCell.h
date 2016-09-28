@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 @class FTDirectMessageCellViewModel;
 @interface FTMessageTableViewCell : UITableViewCell
-@property (nonatomic, strong)FTDirectMessageCellViewModel *viewModel;
+
+- (void)bindViewModel:(FTDirectMessageCellViewModel *)viewModel;
 @end

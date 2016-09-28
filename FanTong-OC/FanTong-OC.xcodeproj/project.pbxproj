@@ -15,6 +15,7 @@
 		2A1F30FE1D9A4F7D00C4F5A7 /* FTConversationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F30FD1D9A4F7D00C4F5A7 /* FTConversationTableViewCell.m */; };
 		2A1F31011D9A560700C4F5A7 /* FTConversationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F31001D9A560700C4F5A7 /* FTConversationViewModel.m */; };
 		2A1F31041D9A572A00C4F5A7 /* FTConversationCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F31031D9A572A00C4F5A7 /* FTConversationCellViewModel.m */; };
+		2A1F31071D9B589A00C4F5A7 /* FTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F31061D9B589A00C4F5A7 /* FTTableViewController.m */; };
 		2A5EBBCD1D8943F500EC80D2 /* SSKeychain+FTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBCC1D8943F500EC80D2 /* SSKeychain+FTUtil.m */; };
 		2A5EBBD01D894E6E00EC80D2 /* FTHomepageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBCF1D894E6E00EC80D2 /* FTHomepageViewModel.m */; };
 		2A5EBBD61D894F5500EC80D2 /* FTModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBD51D894F5500EC80D2 /* FTModels.m */; };
@@ -90,6 +91,8 @@
 		2A1F31001D9A560700C4F5A7 /* FTConversationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversationViewModel.m; sourceTree = "<group>"; };
 		2A1F31021D9A572A00C4F5A7 /* FTConversationCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConversationCellViewModel.h; sourceTree = "<group>"; };
 		2A1F31031D9A572A00C4F5A7 /* FTConversationCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTConversationCellViewModel.m; sourceTree = "<group>"; };
+		2A1F31051D9B589A00C4F5A7 /* FTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTableViewController.h; sourceTree = "<group>"; };
+		2A1F31061D9B589A00C4F5A7 /* FTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTableViewController.m; sourceTree = "<group>"; };
 		2A5EBBCB1D8943F500EC80D2 /* SSKeychain+FTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSKeychain+FTUtil.h"; sourceTree = "<group>"; };
 		2A5EBBCC1D8943F500EC80D2 /* SSKeychain+FTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSKeychain+FTUtil.m"; sourceTree = "<group>"; };
 		2A5EBBCE1D894E6E00EC80D2 /* FTHomepageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHomepageViewModel.h; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 			children = (
 				2AC265EB1D5CA7A500763253 /* FTViewController.h */,
 				2AC265EC1D5CA7A500763253 /* FTViewController.m */,
+				2A1F31051D9B589A00C4F5A7 /* FTTableViewController.h */,
+				2A1F31061D9B589A00C4F5A7 /* FTTableViewController.m */,
 			);
 			name = BaseClass;
 			sourceTree = "<group>";
@@ -638,6 +643,7 @@
 				2A5EBBFE1D90DE6100EC80D2 /* BarItem.m in Sources */,
 				2A1F31011D9A560700C4F5A7 /* FTConversationViewModel.m in Sources */,
 				2AEF16E01D8017CD0062047B /* FTRouter.m in Sources */,
+				2A1F31071D9B589A00C4F5A7 /* FTTableViewController.m in Sources */,
 				2A5EBC021D92254900EC80D2 /* NSAttributedString+Ext.m in Sources */,
 				2A5EBBDA1D8E37A700EC80D2 /* FTTimelineTableViewCell.m in Sources */,
 				2AC265ED1D5CA7A500763253 /* FTViewController.m in Sources */,

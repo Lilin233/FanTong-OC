@@ -14,6 +14,7 @@
     if (self) {
         if (_dm != dm) {
             _dm = dm;
+            self.height = 60;
             [self resetDmData];
         }
     }

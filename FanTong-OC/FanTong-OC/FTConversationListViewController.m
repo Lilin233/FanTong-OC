@@ -9,16 +9,19 @@
 #import "FTConversationListViewController.h"
 #import "FTConversationTableViewCell.h"
 #import "FTConversationViewModel.h"
-@interface FTConversationListViewController ()<UITableViewDelegate, UITableViewDataSource>
-
-@property (nonatomic, strong)UITableView *conversatonTableView;
+#import "FTConversationTableViewCell.h"
+@interface FTConversationListViewController ()
 @property (nonatomic, strong)FTConversationViewModel *viewModel;
+
 @end
 
 @implementation FTConversationListViewController
 @synthesize viewModel = _viewModel;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,41 +33,26 @@
             [MBProgressHUD showHUDAddedTo:self.view animated:YES].labelText = MBPROGRESSHUD_LABEL_TEXT;
         } else {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
-            [self.conversatonTableView reloadData];
+            [self.tableView reloadData];
         }
         
     }];
     
 }
-
-#pragma mark UITableView Datasource
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.viewModel.datasource.count;
-}
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString * identifier = @"cellID";
-    FTConversationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+- (UITableViewCell *)tableView:(UITableView *)tableView dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath{
+    static NSString *ident = @"conversationCell";
+    FTConversationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ident];
     if (cell == nil) {
-        cell = [[FTConversationTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[FTConversationTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ident];
     }
-    cell.viewModel = self.viewModel.datasource[indexPath.row];
     return cell;
 }
-
+- (void)configureCell:(FTConversationTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath withObject:(FTConversationCellViewModel *)viewModel{
+    [cell bindViewModel:viewModel];
+}
 
 #pragma mark Custom Accessors
 
-
-- (UITableView *)conversatonTableView{
-    if (_conversatonTableView == nil) {
-        _conversatonTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NAVICATIONBAR_HEIGHT + STATUSBAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVICATIONBAR_HEIGHT - STATUSBAR_HEIGHT) style:UITableViewStylePlain];
-        _conversatonTableView.delegate = self;
-        _conversatonTableView.dataSource = self;
-        [self.view addSubview:_conversatonTableView];
-    }
-    return _conversatonTableView;
-}
 
 - (void)setOtherid:(NSString *)otherid{
     if (_otherid != otherid) {
@@ -77,6 +65,7 @@
 - (FTViewModel *)viewModel{
     if (_viewModel == nil) {
         _viewModel = [[FTConversationViewModel alloc]initWithParams:nil];
+        _viewModel.shouldRequestRemoteDataOnViewDidLoad = NO;
     }
     return _viewModel;
 }

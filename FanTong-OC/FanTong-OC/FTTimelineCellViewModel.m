@@ -23,7 +23,7 @@
 }
 - (void)layout{
     [self layoutStatusContent];
-    _height = ({
+    self.height = ({
         CGFloat height = 0;
         height += kStatusAvatarMarginTop;
         height += kStatusAvatarHeight;

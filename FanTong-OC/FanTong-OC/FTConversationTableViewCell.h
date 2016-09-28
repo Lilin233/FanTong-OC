@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "FTConversationCellViewModel.h"
 @interface FTConversationTableViewCell : UITableViewCell
-@property (nonatomic, strong)FTConversationCellViewModel *viewModel;
+
+- (void)bindViewModel:(FTConversationCellViewModel *)viewModel;
 @end

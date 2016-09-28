@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@interface FTDirectMessageCellViewModel : NSObject
+#import "FTViewModel.h"
+@interface FTDirectMessageCellViewModel :FTViewModel
 @property (nonatomic, copy)NSString *senderName;
 @property (nonatomic, strong)NSURL *senderAvatarURL;
 @property (nonatomic, copy)NSString *createDate;

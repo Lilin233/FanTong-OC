@@ -13,7 +13,7 @@
     UILabel *_conversationLabel;
     
 }
-
+@property (nonatomic, strong)FTConversationCellViewModel *viewModel;
 @end
 
 @implementation FTConversationTableViewCell
@@ -35,6 +35,7 @@
     return self;
     
 }
+
 - (void)initSubViews{
     _conversationLabel = ({
         UILabel *label = [[UILabel alloc]initWithFrame:self.contentView.bounds];
@@ -44,16 +45,12 @@
         label;
     });
 }
-#pragma mark Private
-- (void)resetData{
-    _conversationLabel.text = self.viewModel.text;
-}
 
-#pragma mark Custom Accessors
-- (void)setViewModel:(FTConversationCellViewModel *)viewModel{
-    if (_viewModel != viewModel) {
-        _viewModel = viewModel;
-        [self resetData];
-    }
+#pragma mark Private
+
+- (void)bindViewModel:(FTConversationCellViewModel *)viewModel{
+    self.viewModel = viewModel;
+    _conversationLabel.text = self.viewModel.text;
+
 }
 @end

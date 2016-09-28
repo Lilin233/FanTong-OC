@@ -10,14 +10,11 @@
 #import "FTLoginViewController.h"
 #import "FTTimelineTableViewCell.h"
 #import "FTHomepageViewModel.h"
-#import "CBStoreHouseRefreshControl.h"
-#import <SVPullToRefresh/SVPullToRefresh.h>
 #import <Vertigo/TGRImageViewController.h>
 #import <Vertigo/TGRImageZoomAnimationController.h>
-@interface FTHomePageViewController ()<UITableViewDelegate, UITableViewDataSource, UIViewControllerTransitioningDelegate, TimeLineCellDelegate, UITabBarControllerDelegate>
-@property (nonatomic, strong)UITableView *timelineTableView;
+
+@interface FTHomePageViewController ()<UIViewControllerTransitioningDelegate, TimeLineCellDelegate, UITabBarControllerDelegate>
 @property (nonatomic, strong)FTHomepageViewModel *viewModel;
-@property (nonatomic, strong)CBStoreHouseRefreshControl *storeHouseRefreshControl;
 @property (nonatomic, strong)UIImageView *currentStatusImageView;
 @end
 
@@ -30,23 +27,10 @@
     
     self.tabBarController.delegate = self;
     
-    [self.viewModel.requestRemoteDataCommand execute:nil];
-    self.timelineTableView.alwaysBounceVertical = YES;
+    if ([self.viewModel shouldRequestRemoteDataOnViewDidLoad]) {
+        [self.viewModel.requestRemoteDataCommand execute:@1];
+    }
 
-    self.storeHouseRefreshControl = [CBStoreHouseRefreshControl attachToScrollView:self.timelineTableView target:self refreshAction:@selector(refreshTriggered:) plist:@"fanci" color:[UIColor blackColor] lineWidth:1.5 dropHeight:100 scale:1 horizontalRandomness:150 reverseLoadingAnimation:YES internalAnimationFactor:0.5];
-    
-    @weakify(self)
-    [self.timelineTableView addInfiniteScrollingWithActionHandler:^{
-        @strongify(self)
-        [[[self.viewModel.requestRemoteDataCommand execute:self.viewModel.datasource.lastObject] deliverOnMainThread] subscribeNext:^(id x) {
-            
-        } error:^(NSError *error) {
-            [self.timelineTableView.infiniteScrollingView stopAnimating];
-        } completed:^{
-            [self.timelineTableView.infiniteScrollingView stopAnimating];
-        }];
-        
-    }];
     
 }
 
@@ -61,56 +45,24 @@
             [MBProgressHUD showHUDAddedTo:self.view animated:YES].labelText = MBPROGRESSHUD_LABEL_TEXT;
         } else {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
-            [self.timelineTableView reloadData];
+            [self.tableView reloadData];
         }
 
     }];
 
 }
 
-- (void)refreshTriggered:(id)sender{
-    @weakify(self)
-    [[[self.viewModel.requestRemoteDataCommand execute:self.viewModel.datasource.firstObject] deliverOnMainThread] subscribeNext:^(id x) {
-        
-    } error:^(NSError *error) {
-        @strongify(self)
-        [self.storeHouseRefreshControl finishingLoading];
-    } completed:^{
-        @strongify(self)
-        [self.storeHouseRefreshControl finishingLoading];
-    }];
-}
-
-#pragma mark UITableView Delegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    [self.storeHouseRefreshControl scrollViewDidScroll];
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    [self.storeHouseRefreshControl scrollViewDidEndDragging];
-}
-
-#pragma mark UITableView Datasource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.viewModel.datasource.count;
-
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier = @"cellID";
-    FTTimelineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[FTTimelineTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+- (UITableViewCell *)tableView:(UITableView *)tableView dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath{
+    static NSString *ident = @"timelineCell";
+    FTTimelineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ident];
+    if (cell == nil) {
+        cell = [[FTTimelineTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ident];
     }
-    cell.viewModel = self.viewModel.datasource[indexPath.row];
-    cell.cellDelegate = self;
     return cell;
 }
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FTTimelineCellViewModel *cellViewModel = self.viewModel.datasource[indexPath.row];
-    return cellViewModel.height;
-
+- (void)configureCell:(FTTimelineTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath withObject:(FTTimelineCellViewModel *)viewModel{
+    cell.cellDelegate = self;
+    [cell bindViewModel:viewModel];
 }
 
 #pragma mark UIViewControllerTransitioningDelegate
@@ -144,18 +96,6 @@
 }
 
 #pragma mark Custom Accessors
-- (UITableView *)timelineTableView{
-    if (_timelineTableView == nil) {
-        _timelineTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - TABBAR_HEIGHT) style:UITableViewStylePlain];
-        _timelineTableView.delegate = self;
-        _timelineTableView.dataSource = self;
-        _timelineTableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
-        [self.view addSubview:_timelineTableView];
-    }
-    return _timelineTableView;
-
-}
-
 - (FTViewModel *)viewModel{
     if (_viewModel == nil) {
         _viewModel = [[FTHomepageViewModel alloc]initWithParams:nil];
@@ -166,8 +106,5 @@
 #pragma mark UITabbarController Delegate
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
 
-//    if(tabBarController.selectedViewController == self){
-//        [self refreshTriggered:nil];
-//    }
 }
 @end

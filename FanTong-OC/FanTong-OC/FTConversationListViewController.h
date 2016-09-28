@@ -7,6 +7,8 @@
 //
 
 #import "FTViewController.h"
-@interface FTConversationListViewController : FTViewController
+#import "FTTableViewController.h"
+
+@interface FTConversationListViewController : FTTableViewController
 @property (nonatomic, copy)NSString *otherid;
 @end

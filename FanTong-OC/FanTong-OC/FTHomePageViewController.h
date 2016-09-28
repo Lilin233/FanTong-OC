@@ -7,7 +7,7 @@
 //
 
 #import "FTViewController.h"
-
-@interface FTHomePageViewController : FTViewController
+#import "FTTableViewController.h"
+@interface FTHomePageViewController : FTTableViewController
 
 @end

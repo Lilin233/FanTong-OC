@@ -12,6 +12,9 @@
 
 @property (nonatomic, strong)RACSubject *willDisappearSignal;
 
+@property (nonatomic, assign)CGFloat height;
+
+@property (nonatomic, assign)BOOL shouldRequestRemoteDataOnViewDidLoad;
 - (instancetype)initWithParams:(NSDictionary *)params;
 
 - (void)initialize;

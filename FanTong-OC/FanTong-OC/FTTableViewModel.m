@@ -10,4 +10,14 @@
 
 @implementation FTTableViewModel
 
+- (instancetype)initWithParams:(NSDictionary *)params{
+    self = [super initWithParams:params];
+    if (self) {
+        self.shouldPullToRefresh = YES;
+        self.shouldInfiniteScrolling = YES;
+        self.shouldRequestRemoteDataOnViewDidLoad = YES;
+        self.page = 1;
+    }
+    return self;
+}
 @end

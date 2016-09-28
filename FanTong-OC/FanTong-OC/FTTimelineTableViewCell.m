@@ -15,7 +15,9 @@
     UILabel *_statusDateLabel;
     UIImageView *_statusImageView;
     FTStatusToolBar *_statusToolBar;
+    
 }
+@property (nonatomic, strong)FTTimelineCellViewModel *viewModel;
 
 @end
 
@@ -94,26 +96,23 @@
     });
     
 }
-#pragma mark Private Methods
-- (void)layoutStatusSubViews{
+#pragma mark Public
+- (void)bindViewModel:(FTTimelineCellViewModel *)viewModel{
+    _viewModel = viewModel;
+    
     [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:_viewModel.status.user.profile_image_url_large]];
     _statusTitleLabel.text = _viewModel.status.user.screen_name;
     [_statusContentLabel setHeight:_viewModel.contentHeight];
     _statusContentLabel.attributedString = [_viewModel.status.text formatterHTMLAttributeString];
     _statusDateLabel.text = [_viewModel.status.created_at formatterStatusTime];
     [_statusImageView sd_setImageWithURL:[NSURL URLWithString:_viewModel.status.photo.imageurl]];
+
 }
+
+#pragma mark Private Methods
 - (void)imageTap:(UITapGestureRecognizer *)tap{
     if ([_cellDelegate respondsToSelector:@selector(statusImageClick:)]) {
         [_cellDelegate statusImageClick:(UIImageView *)tap.view];
-    }
-}
-
-#pragma mark Custom Accessors
-- (void)setViewModel:(FTTimelineCellViewModel *)viewModel{
-    if (_viewModel != viewModel) {
-        _viewModel = viewModel;
-        [self layoutStatusSubViews];
     }
 }
 @end

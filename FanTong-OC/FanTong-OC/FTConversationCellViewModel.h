@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@interface FTConversationCellViewModel : NSObject
+@interface FTConversationCellViewModel : FTViewModel
 
 @property (nonatomic, strong)DirectMessage *dm;
 

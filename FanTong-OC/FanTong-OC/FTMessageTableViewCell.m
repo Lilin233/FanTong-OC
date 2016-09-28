@@ -14,6 +14,7 @@
     UILabel *_contentLabel;
     UILabel *_dateLabel;
 }
+@property (nonatomic, strong)FTDirectMessageCellViewModel *viewModel;
 
 @end
 
@@ -75,19 +76,12 @@
 }
 
 #pragma mark Private
-- (void)congfigureMessageList{
+- (void)bindViewModel:(FTDirectMessageCellViewModel *)viewModel{
+    _viewModel = viewModel;
     [_avatarImageView sd_setImageWithURL:self.viewModel.senderAvatarURL];
     _senderNameLabel.text = self.viewModel.senderName;
     _contentLabel.text = self.viewModel.directMessageLastContent;
     _dateLabel.text = self.viewModel.createDate;
 
-}
-
-#pragma mark Custom Accesstors
-- (void)setViewModel:(FTDirectMessageCellViewModel *)viewModel{
-    if (_viewModel != viewModel) {
-        _viewModel = viewModel;
-        [self congfigureMessageList];
-    }
 }
 @end

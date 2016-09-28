@@ -14,8 +14,6 @@
 
 @property (nonatomic, strong)RACCommand *didClickLinkCommand;
 
-///< status总高度
-@property (nonatomic, assign)CGFloat height;
 ///< status 文本内容高度
 @property (nonatomic, assign)CGFloat contentHeight;
 

@@ -26,7 +26,8 @@
 
 @interface FTTimelineTableViewCell : UITableViewCell
 
-@property (nonatomic, strong)FTTimelineCellViewModel *viewModel;
 @property (nonatomic, weak)id<StatusToolbarDelegate>delegate;
 @property (nonatomic, weak)id<TimeLineCellDelegate>cellDelegate;
+
+- (void)bindViewModel:(FTTimelineCellViewModel *)viewModel;
 @end
