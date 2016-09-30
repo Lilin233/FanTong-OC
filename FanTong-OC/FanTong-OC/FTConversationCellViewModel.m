@@ -28,11 +28,5 @@
 }
 
 #pragma mark Custom Accessors
-//- (void)setDm:(DirectMessage *)dm{
-//    if (_dm != dm) {
-//        _dm = dm;
-//        _text = _dm.text;
-//    }
-//}
 
 @end

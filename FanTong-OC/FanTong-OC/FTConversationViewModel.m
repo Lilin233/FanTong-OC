@@ -35,7 +35,7 @@
                     for (NSDictionary *dic in responseObject) {
                         DirectMessage *dm = [DirectMessage modelWithJSON:dic];
                         FTConversationCellViewModel *viewModel = [[FTConversationCellViewModel alloc]initWitDirectMessageModel:dm];
-                        [itemArray addObject:viewModel];
+                        [itemArray insertObject:viewModel atIndex:0];
                     }
                     self.datasource = [itemArray copy];
                     [subscriber sendCompleted];

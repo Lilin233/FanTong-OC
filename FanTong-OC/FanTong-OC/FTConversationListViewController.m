@@ -23,7 +23,9 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    self.tableView.contentOffset = CGPointMake(0, CGFLOAT_MAX);
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -49,6 +51,11 @@
 }
 - (void)configureCell:(FTConversationTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath withObject:(FTConversationCellViewModel *)viewModel{
     [cell bindViewModel:viewModel];
+}
+
+#pragma mark UIScrollView Delegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
 }
 
 #pragma mark Custom Accessors
