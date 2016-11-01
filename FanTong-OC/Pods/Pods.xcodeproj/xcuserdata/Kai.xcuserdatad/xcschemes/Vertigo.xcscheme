@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C16737615AE1325766CD73A2FAD43748'
+               BlueprintIdentifier = '2A9D6ECB716ECACF6BB73DD804E432CE'
                BlueprintName = 'Vertigo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libVertigo.a'>

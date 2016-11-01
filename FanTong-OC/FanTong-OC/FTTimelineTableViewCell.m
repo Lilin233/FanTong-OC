@@ -77,7 +77,7 @@
     
     _statusImageView = ({
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, self.height - kStatusToolbarHeight - kStatusImageViewHeight, SCREEN_WIDTH, kStatusImageViewHeight)];
-        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTap:)];
         [imageView addGestureRecognizer:tap];
@@ -104,6 +104,7 @@
     _statusTitleLabel.text = _viewModel.status.user.screen_name;
     [_statusContentLabel setHeight:_viewModel.contentHeight];
     _statusContentLabel.attributedString = [_viewModel.status.text formatterHTMLAttributeString];
+//    _statusContentLabel.attributedString = [@"我们老是被教育着要过正确的生活" formatterHTMLAttributeString];
     _statusDateLabel.text = [_viewModel.status.created_at formatterStatusTime];
     [_statusImageView sd_setImageWithURL:[NSURL URLWithString:_viewModel.status.photo.imageurl]];
 

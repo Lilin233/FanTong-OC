@@ -12,6 +12,7 @@
 #import "FTHomepageViewModel.h"
 #import <Vertigo/TGRImageViewController.h>
 #import <Vertigo/TGRImageZoomAnimationController.h>
+#import "FTClient.h"
 
 @interface FTHomePageViewController ()<UIViewControllerTransitioningDelegate, TimeLineCellDelegate, UITabBarControllerDelegate>
 @property (nonatomic, strong)FTHomepageViewModel *viewModel;
@@ -31,7 +32,6 @@
         [self.viewModel.requestRemoteDataCommand execute:@1];
     }
 
-    
 }
 
 - (void)didReceiveMemoryWarning {

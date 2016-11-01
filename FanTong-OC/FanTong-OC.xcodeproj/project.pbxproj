@@ -29,11 +29,15 @@
 		2A5EBBFF1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBBFD1D90DE6100EC80D2 /* CBStoreHouseRefreshControl.m */; };
 		2A5EBC021D92254900EC80D2 /* NSAttributedString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBC011D92254900EC80D2 /* NSAttributedString+Ext.m */; };
 		2A5EBC051D92607A00EC80D2 /* NSMutableArray+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EBC041D92607A00EC80D2 /* NSMutableArray+Ext.m */; };
+		2A6DCF811DAB9795009C6871 /* FTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DCF801DAB9795009C6871 /* FTClient.m */; };
+		2A6DCF851DAB98E5009C6871 /* Overcoat+ReactiveCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DCF841DAB98E5009C6871 /* Overcoat+ReactiveCocoa.podspec */; };
+		2A6DCF871DAB9BED009C6871 /* Version in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DCF861DAB9BED009C6871 /* Version */; };
 		2A7378D11D8164CC00C604F3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7378D01D8164CC00C604F3 /* NSData+Base64.m */; };
 		2A7378DB1D81671A00C604F3 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7378D81D81671A00C604F3 /* base64.m */; };
 		2A7378DC1D81671A00C604F3 /* HmacSha1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7378DA1D81671A00C604F3 /* HmacSha1.m */; };
 		2A7379421D82BE1D00C604F3 /* HYBNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 2A7379411D82BE1C00C604F3 /* HYBNetworking */; };
 		2A7379461D86AC6E00C604F3 /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7379451D86AC6E00C604F3 /* NSString+Ext.m */; };
+		2A7CCC4E1DC83DC50072BC7B /* 方正清刻本悦宋简体.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CCC4D1DC83DC50072BC7B /* 方正清刻本悦宋简体.TTF */; };
 		2A91A9761D40F0410050E423 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91A9751D40F0410050E423 /* main.m */; };
 		2A91A9791D40F0410050E423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91A9781D40F0410050E423 /* AppDelegate.m */; };
 		2A91A97F1D40F0410050E423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A91A97D1D40F0410050E423 /* Main.storyboard */; };
@@ -53,7 +57,7 @@
 		2AC265F91D5CA84000763253 /* FTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC265F81D5CA84000763253 /* FTProfileViewController.m */; };
 		2AEE69321D5DEBF000933620 /* FTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE69311D5DEBF000933620 /* FTLoginViewController.m */; };
 		2AEF16E01D8017CD0062047B /* FTRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF16DF1D8017CD0062047B /* FTRouter.m */; };
-		72F931C1308827197B3BF4A0 /* libPods-FanTong-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 999E85A35E533C1DC0700BDA /* libPods-FanTong-OC.a */; };
+		AC24D958622ECEAB7E3E5B85 /* libPods-FanTong-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC5A0D51B560E3A1FADB6D /* libPods-FanTong-OC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		0C4850EFBE6E96C6E7A5B9B5 /* Pods-FanTong-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FanTong-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FanTong-OC/Pods-FanTong-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		23FC5A0D51B560E3A1FADB6D /* libPods-FanTong-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FanTong-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1F30ED1D98F6DE00C4F5A7 /* FTMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMessageTableViewCell.h; sourceTree = "<group>"; };
 		2A1F30EE1D98F6DE00C4F5A7 /* FTMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMessageTableViewCell.m; sourceTree = "<group>"; };
 		2A1F30F01D9902BB00C4F5A7 /* FTDirectMessageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDirectMessageViewModel.h; sourceTree = "<group>"; };
@@ -118,6 +123,10 @@
 		2A5EBC011D92254900EC80D2 /* NSAttributedString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Ext.m"; sourceTree = "<group>"; };
 		2A5EBC031D92607A00EC80D2 /* NSMutableArray+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Ext.h"; sourceTree = "<group>"; };
 		2A5EBC041D92607A00EC80D2 /* NSMutableArray+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Ext.m"; sourceTree = "<group>"; };
+		2A6DCF7F1DAB9795009C6871 /* FTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTClient.h; sourceTree = "<group>"; };
+		2A6DCF801DAB9795009C6871 /* FTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTClient.m; sourceTree = "<group>"; };
+		2A6DCF841DAB98E5009C6871 /* Overcoat+ReactiveCocoa.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Overcoat+ReactiveCocoa.podspec"; path = "../Overcoat+ReactiveCocoa.podspec"; sourceTree = "<group>"; };
+		2A6DCF861DAB9BED009C6871 /* Version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Version; path = ../Version; sourceTree = "<group>"; };
 		2A7378CF1D8164CC00C604F3 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		2A7378D01D8164CC00C604F3 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		2A7378D71D81671A00C604F3 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
@@ -127,6 +136,7 @@
 		2A7379411D82BE1C00C604F3 /* HYBNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HYBNetworking; sourceTree = "<group>"; };
 		2A7379441D86AC6E00C604F3 /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
 		2A7379451D86AC6E00C604F3 /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
+		2A7CCC4D1DC83DC50072BC7B /* 方正清刻本悦宋简体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正清刻本悦宋简体.TTF"; sourceTree = "<group>"; };
 		2A91A9711D40F0410050E423 /* FanTong-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FanTong-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A91A9751D40F0410050E423 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A91A9771D40F0410050E423 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -165,7 +175,6 @@
 		2AEE69311D5DEBF000933620 /* FTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTLoginViewController.m; sourceTree = "<group>"; };
 		2AEF16DE1D8017CD0062047B /* FTRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTRouter.h; sourceTree = "<group>"; };
 		2AEF16DF1D8017CD0062047B /* FTRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTRouter.m; sourceTree = "<group>"; };
-		999E85A35E533C1DC0700BDA /* libPods-FanTong-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FanTong-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95D69FE3FA2968CDD985B77 /* Pods-FanTong-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FanTong-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-FanTong-OC/Pods-FanTong-OC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AAEEF1F1D93B9AB0035A198 /* CoreFoundation.framework in Frameworks */,
-				72F931C1308827197B3BF4A0 /* libPods-FanTong-OC.a in Frameworks */,
+				AC24D958622ECEAB7E3E5B85 /* libPods-FanTong-OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +280,8 @@
 		2A91A9731D40F0410050E423 /* FanTong-OC */ = {
 			isa = PBXGroup;
 			children = (
+				2A6DCF861DAB9BED009C6871 /* Version */,
+				2A6DCF841DAB98E5009C6871 /* Overcoat+ReactiveCocoa.podspec */,
 				2A7378DD1D82B1F700C604F3 /* Vendor */,
 				2AC265E51D5CA61900763253 /* Resource */,
 				2AC265E61D5CA62500763253 /* Util */,
@@ -331,6 +342,7 @@
 		2AC265E51D5CA61900763253 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				2A7CCC4D1DC83DC50072BC7B /* 方正清刻本悦宋简体.TTF */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -354,6 +366,8 @@
 				2A5EBBF51D8F8F5700EC80D2 /* FTNetWorking.m */,
 				2A1F30F61D9A0E1800C4F5A7 /* FTAppBean.h */,
 				2A1F30F71D9A0E1800C4F5A7 /* FTAppBean.m */,
+				2A6DCF7F1DAB9795009C6871 /* FTClient.h */,
+				2A6DCF801DAB9795009C6871 /* FTClient.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -425,7 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				2AAEEF1E1D93B9AB0035A198 /* CoreFoundation.framework */,
-				999E85A35E533C1DC0700BDA /* libPods-FanTong-OC.a */,
+				23FC5A0D51B560E3A1FADB6D /* libPods-FanTong-OC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -510,7 +524,8 @@
 				TargetAttributes = {
 					2A91A9701D40F0410050E423 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = SLFN93H774;
+						DevelopmentTeam = T33D97QCKP;
+						ProvisioningStyle = Automatic;
 					};
 					2A91A9891D40F0410050E423 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -548,9 +563,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7379421D82BE1D00C604F3 /* HYBNetworking in Resources */,
+				2A7CCC4E1DC83DC50072BC7B /* 方正清刻本悦宋简体.TTF in Resources */,
+				2A6DCF851DAB98E5009C6871 /* Overcoat+ReactiveCocoa.podspec in Resources */,
 				2A5EBBF81D90D2C000EC80D2 /* storehouse.plist in Resources */,
 				2A91A9841D40F0410050E423 /* LaunchScreen.storyboard in Resources */,
 				2A91A9811D40F0410050E423 /* Assets.xcassets in Resources */,
+				2A6DCF871DAB9BED009C6871 /* Version in Resources */,
 				2AAEEF211D93D2B50035A198 /* fanci.plist in Resources */,
 				2A91A97F1D40F0410050E423 /* Main.storyboard in Resources */,
 			);
@@ -627,6 +645,7 @@
 			files = (
 				2A5EBBCD1D8943F500EC80D2 /* SSKeychain+FTUtil.m in Sources */,
 				2A5EBBE31D8E3B4000EC80D2 /* FTStatusToolBar.m in Sources */,
+				2A6DCF811DAB9795009C6871 /* FTClient.m in Sources */,
 				2AC265F61D5CA82F00763253 /* FTSearchViewController.m in Sources */,
 				2A91A9791D40F0410050E423 /* AppDelegate.m in Sources */,
 				2AA5E7571D7FB44400099E02 /* UIViewExt.m in Sources */,
@@ -805,13 +824,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = T33D97QCKP;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FanTong-OC/FanTong-OC.pch";
 				INFOPLIST_FILE = "FanTong-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OCC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OCCCC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -824,13 +844,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = T33D97QCKP;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FanTong-OC/FanTong-OC.pch";
 				INFOPLIST_FILE = "FanTong-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OCC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CocoaThinking.FanTong-OCCCC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

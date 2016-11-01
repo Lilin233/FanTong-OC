@@ -39,14 +39,14 @@
 /// Status
 ///-----
 
-#define kStatusTitleFont [UIFont boldSystemFontOfSize:35]
+#define kStatusTitleFont [UIFont fontWithName:@"FZQingKeBenYueSongS-R-GB" size:18.f]
 #define kStatusContentFont [UIFont boldSystemFontOfSize:20]
-#define kStatusDateFont [UIFont systemFontOfSize:12]
+#define kStatusDateFont [UIFont systemFontOfSize:14.f]
 ///< 头像高度
-static CGFloat const kStatusAvatarHeight = 60;
+static CGFloat const kStatusAvatarHeight = 40;
 static CGFloat const kStatusAvatarCornerRadius = 6;
 ///< cell顶部留白
-static CGFloat const kStatusAvatarMarginTop = 16;
+static CGFloat const kStatusAvatarMarginTop = 10;
 ///< cell左侧留白
 static CGFloat const kStatusAvatarMarginLeft = 15;
 ///< 内容离标题留白

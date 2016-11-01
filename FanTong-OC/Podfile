@@ -1,5 +1,5 @@
+
 target 'FanTong-OC' do
-  pod 'ReactiveCocoa', '~> 2.5'
   pod 'SDWebImage', '~> 3.7.1'
   pod 'UIActivityIndicator-for-SDWebImage'
   pod 'MBProgressHUD', '~> 0.9'
@@ -25,5 +25,7 @@ target 'FanTong-OC' do
   pod 'DTCoreText'
   pod 'Vertigo'
   pod 'Realm'
+  pod 'Overcoat+ReactiveCocoa', '~> 4.0.0-beta.2'
+
 end
 

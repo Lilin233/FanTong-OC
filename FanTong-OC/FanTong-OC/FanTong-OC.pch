@@ -28,4 +28,6 @@
     #import "NSAttributedString+Ext.h"
     #import "NSMutableArray+Ext.h"
     #import <Realm/Realm.h>
+    #import <Overcoat/Overcoat.h>
+    #import <OvercoatReactiveCocoa/OvercoatReactiveCocoa.h>
 #endif /* FanTong_OC_pch */

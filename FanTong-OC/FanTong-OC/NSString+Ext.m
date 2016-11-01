@@ -16,7 +16,7 @@
                                        DTDefaultLineHeightMultiplier: @(1.5)};
     NSAttributedString* attributedString = [[NSAttributedString alloc] initWithHTMLData:[self dataUsingEncoding:NSUnicodeStringEncoding] options:optionDictionary documentAttributes:nil];
     NSMutableAttributedString *mutableAttributedString = [attributedString mutableCopy];
-    [mutableAttributedString addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:20] range:NSMakeRange(0, mutableAttributedString.length)];
+    [mutableAttributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"FZQingKeBenYueSongS-R-GB" size:16.f] range:NSMakeRange(0, mutableAttributedString.length)];
     return [mutableAttributedString copy];
 }
 
